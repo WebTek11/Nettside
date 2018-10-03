@@ -17,105 +17,20 @@ body {
   font-family: "helvetica neue";
 }
 
- /*Alle boksene som ikke er navbar eller footer*/
-.boxFront {
-  max-width: 960px;
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding: 10px 0px 10px 0px;
-}
-
-.boxFront .boxBorder {
-  border-style: solid;
-  border-width: 1.5px;
-  width: 300px;
-  padding: 50px;
-  box-shadow: 4px 4px 2px grey;
-  text-align: justify;
-  background-color: #FBFBFB;
-  min-height: 300px;
-}
-
-.boxFront:nth-child(even) .boxBorder{
-  position: relative;
-  left: 540px;
-}
-
-.boxFront:nth-child(odd) .boxBorder{
-  position: relative;
-  margin: 5px;
-}
-
-.boxFront:nth-child(even) h2{
-  left: 540px;
-}
-
-.boxFront:nth-child(odd) h2{
-  margin: 5px;
-}
-
-.boxFront h2{
-  position: relative;
-  text-align: center;
-  max-width: 400px;
-}
-
-/*Se mer-boks*/
-.moreBox {
-  border-style: solid;
-  border-width: 1px;
-  border-color: green;
-  padding: 25px;
-  position: absolute;
-  left: 135px;
-  bottom: 70px;
-  width: 80px;
-  text-align: center;
-}
-
-.moreBox:hover {
-  color: white;
-  background-color: green;
-}
-
-h1 {
-  color: #498E33;
-  border-bottom-color: #CEDC3F;
-  border-bottom-style: solid;
-  text-align: center;
-}
-
-
-h2 {
-  color: #498E33;
-  font-size: 30px;
-  /*border-bottom-color: #CEDC3F;
-  border-bottom-style: solid;*/
-  margin-bottom: 5px;
-  margin-top: 0px;
-  max-width: 940px;
-}
-
-h3 {
-  color: #475351;
-  margin: 0 0 0 0;
-}
-
 /*Navbar*/
 .navbar {
   background-color: white;
   position: sticky;
   top: 0px;
-  box-shadow: 0px 5px 3px grey;
-  z-index: 1;
+  box-shadow: 0px 2px 2px grey;
+  z-index: 10;
+  /*opacity: 0.6;*/
 }
 
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0 auto 0 auto;
-
 }
 
 li {
@@ -126,23 +41,22 @@ li a {
     position: relative;
     margin: auto;
     display: block;
-    color: white;
+    color: #CFDB42;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     padding: 20px;
     text-decoration: none;
-    -webkit-text-stroke: 1px grey;
+    /*-webkit-text-stroke: 0.2px black;*/
 }
 
 /*Enkel underline ved hover*/
 li a:hover {
-  -webkit-text-stroke: 0px;
-  border-bottom-color: green;
+  -webkit-text-stroke: 0px black;
+  border-bottom-color: #CFDB42;
   border-bottom-style: solid;
   border-bottom-width: 5px;
   padding-bottom: 15px;
-  color: green;
 }
 
 .mainBar {
@@ -156,8 +70,117 @@ li a:hover {
 }
 /*Navbar slutt*/
 
+/*Fremsidebilde*/
+.frontImg {
+  width: 100%;
+  position: relative;
+  top: -70px;
+  /*clip-path: inset(0px 0px 30% 0px);
+  margin-bottom: -20%;*/
+  opacity: 0.85;
+  box-shadow: 0px 5px 3px grey
+}
+
+/*Fremsidebilde slutt*/
+
+/*Alle boksene som ikke er navbar eller footer*/
+.boxFront {
+  max-width: 960px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 10px 0px 10px 0px;
+}
+
+/*Tekstbokser */
+.boxFront .boxBorder {
+  /*border-style: solid;
+  border-width: 1.5px;*/
+  width: 350px;
+  padding: 25px;
+  box-shadow: 2px 2px 2px grey;
+  text-align: justify;
+  background-color: #FBFBFB;
+  min-height: 300px;
+  font-size: 1.4em;
+}
+
+/* Seksjonsdeler/bakgrunnskifte */
+.boxContainer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+}
+
+.boxContainer:nth-child(even){
+  background-color: #F6F7EF;
+}
+
+.boxContainer:nth-child(odd){
+  background-color: white;
+}
+
+
+/*Tekstbokser partall*/
+.boxContainer:nth-child(even) .boxFront .boxBorder{
+  position: relative;
+  left: 540px;
+}
+
+.boxContainer:nth-child(even) .boxFront h2{
+  left: 540px;
+}
+
+/*Tekstbokser oddetall*/
+.boxContainer:nth-child(odd) .boxFront .boxBorder{
+  position: relative;
+  background-color: #F6F7EF;
+}
+
+.boxContainer:nth-child(odd) .boxFront h2{
+  margin: 5px;
+}
+
+/*Overskrifter tekstbokser*/
+.boxFront h2{
+  position: relative;
+  max-width: 400px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  top: 28px;
+  z-index: 2;
+
+  text-align: center;
+  color: #CFDB42;
+  font-size: 50px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+/*Se mer-boks*/
+.moreBox {
+  border-style: solid;
+  border-width: 1px;
+  border-color: green;
+  padding: 25px;
+  position: absolute;
+  left: 135px;
+  bottom: 70px;
+  width: 80px;
+  text-align: center;
+  visibility: hidden;
+}
+
+.moreBox:hover {
+  color: white;
+  background-color: green;
+}
+/*Bokser slutt*/
+
+
+/*Footer*/
 #contact {
-  padding-bottom: 150px; /* for footer always on bottom*/
+  margin-bottom: 150px; /* for footer always on bottom*/
 }
 
 footer {
@@ -169,19 +192,10 @@ footer {
   text-align: center;
 }
 
-/*Footertext*/
+/*Footertekst*/
 footer p {
   position: absolute;
   margin: auto;
   width: 100%;
   color: white;
-}
-/*Fremsidebilde placeholder*/
-.frontImg {
-  background-color: pink;
-  width: 100%;
-  height: 500px;
-  position: relative;
-  top: -56px;
-  z-index: -1;
 }
