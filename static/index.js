@@ -4,8 +4,10 @@ document.onscroll = function() {navbarChange()};
 
 function navbarChange() {
   var scrollTop = window.pageYOffset;
-  var t = scrollTop* (-0.2) - 70;
+  /*Parallax*/
+  var t = scrollTop* (0.4) - 70;
   document.getElementById('frontImg').style.top = t+'px';
+
   if (scrollTop < 500) {
     var trans = scrollTop/500;
     document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,'+trans+')';
