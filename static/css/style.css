@@ -75,7 +75,7 @@ li a:hover {
 .frontImg {
   width: 100%;
   object-fit: cover;
-  height: 570px;
+  height: 100vh;
   position: relative;
   top: -70px;
 
