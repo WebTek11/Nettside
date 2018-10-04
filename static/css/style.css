@@ -14,7 +14,7 @@ body {
   background-color: white;
   width: 100%;
   margin: auto;
-  font-family: "helvetica neue";
+  font-family: arial;
 }
 
 /*Navbar*/
@@ -117,7 +117,7 @@ li a:hover {
   padding: 25px;
   /*box-shadow: 2px 2px 2px grey;*/
   text-align: justify;
-  background-color: #FBFBFB;
+  background-color: white;
   min-height: 300px;
   font-size: 1.4em;
 }
@@ -171,7 +171,7 @@ li a:hover {
   color: #CFDB42;
   font-size: 50px;
   font-weight: 200;
-  letter-spacing: 1px;
+  /*letter-spacing: 0px;*/
 }
 
 /*Se mer-boks*/
