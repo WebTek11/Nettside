@@ -78,11 +78,12 @@ li a:hover {
   height: 100vh;
   position: relative;
   top: -70px;
+  z-index: -1;
 
   /*  clip-path: inset(0px 0px 30% 0px);
   margin-bottom: -20%;
-  opacity: 0.85;*/
-  box-shadow: 0px 5px 3px grey
+  opacity: 0.85;
+  box-shadow: 0px 5px 3px grey*/
 }
 
 .imageBox {
