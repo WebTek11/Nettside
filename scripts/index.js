@@ -5,13 +5,13 @@ document.onscroll = function() {navbarChange(), imageParallax()};
 function imageParallax() {
   var scrollTop = window.pageYOffset;
   if (scrollTop < window.innerHeight) {
-  var t = scrollTop * (0.4) - 70;
+  var t = scrollTop * (0.4) - 83;
   document.getElementById('frontImg').style.top = t+'px';
   }
 }
 
 function navbarChange() {
-  var wh = window.innerHeight - 70;
+  var wh = window.innerHeight;
   var whHalf = wh/2;
   var scrollTop = window.pageYOffset;
 
@@ -23,6 +23,8 @@ function navbarChange() {
     document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,'+a+')';
     document.getElementById('nav').style.boxShadow = 'none';
     document.getElementById('nav').style.boxShadow = '0px 1px 10px white';
+
+    document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,'+a+')';
 
     const redOri = 19;
     const greenOri = 14;
@@ -49,5 +51,6 @@ function navbarChange() {
     }
     document.getElementById('nav').style.boxShadow = '0px 0px 10px white';
     document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,0)';
+    document.getElementById('logoSmall').style.backgroundColor = 'rgb(255,255,255,0)';
   }
 }
