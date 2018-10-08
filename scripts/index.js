@@ -44,6 +44,7 @@ function navbarChange() {
     for (i = 0; i < navLinks.length; i++) {
       navLinks[i].style.color = 'rgb(81%,86%,26%)';
     }
+    document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%)'
   }
   else {
     for (i = 0; i < navLinks.length; i++) {
@@ -51,6 +52,6 @@ function navbarChange() {
     }
     document.getElementById('nav').style.boxShadow = '0px 0px 10px white';
     document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,0)';
-    document.getElementById('logoSmall').style.backgroundColor = 'rgb(255,255,255,0)';
+    document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,0)';
   }
 }
