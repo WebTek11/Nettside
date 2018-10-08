@@ -1,10 +1,13 @@
 navbarChange()
 
-document.onscroll = function() {navbarChange()};
+document.onscroll = function() {navbarChange(), imageParallax()};
 
 function imageParallax() {
-  var t = scrollTop* (0.4) - 70;
+  var scrollTop = window.pageYOffset;
+  if (scrollTop < window.innerHeight) {
+  var t = scrollTop * (0.4) - 70;
   document.getElementById('frontImg').style.top = t+'px';
+  }
 }
 
 function navbarChange() {
