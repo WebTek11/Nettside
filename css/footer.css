@@ -1,0 +1,62 @@
+#googlemaps {
+border: 0;
+}
+
+/* This splits the footer into 4 columns */
+.footerColumn {
+  float: left;
+  width: 25%;
+}
+
+.footerRow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* This pushes the footer to the bottom of the page */
+.container {
+  min-height: 100%;
+  margin-bottom: -36px;
+}
+
+#commonFooter {
+  height: 36px;
+}
+
+.boxFront:last-of-type {
+  margin-bottom: 150px;
+}
+
+/* Styling for the footer */
+#commonFooter {
+    background-color: darkgrey;
+    color: green;
+    overflow: hidden; /* Removes a white line below the footer */
+    text-align: center;
+}
+
+.footerHeading {
+  color: #F6F7EF;
+  background-color: darkgrey;
+  font-size: 16px;
+}
+
+.footerText {
+  background-color: darkgrey;
+  color: green;
+  font-size: 14px;
+  text-decoration: none;
+
+}
+/* This changes the footer into a single column when needed */
+@media screen and (max-width: 960px) {
+  .footerColumn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #commonFooter {
+    height: auto;
+  }
+}
