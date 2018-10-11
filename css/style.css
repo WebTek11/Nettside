@@ -38,26 +38,39 @@ li {
     float: left;
     position: relative;
     left: 120px;
+    padding: 30px 20px 30px 20px;
 }
 
 li a {
-    margin: auto;
+
     display: block;
     color: #CFDB42;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    padding: 30px 20px 30px 20px;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 /*Enkel underline ved hover*/
-li a:hover {
-  -webkit-text-stroke: 0px black;
-  border-bottom-color: inherit;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  padding-bottom: 15px;
+li:hover .underline{
+  display: block;
+  width: inherit;
+}
+
+li:hover a{
+  color: grey !important; /* Finnes kanskje metode uten å bruke important*/
+}
+
+.underline {
+  display: none;
+ height: 5px;
+ width: 0px;
+ background-color: grey;
+ position: absolute;
+ bottom: 20px;
+ border-radius: 3px;
+ transition: width 2s;
 }
 
 .mainBar {
