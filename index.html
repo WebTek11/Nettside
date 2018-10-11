@@ -5,25 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>P1 - Prosjektkrav</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+    <link rel="stylesheet" href="css/footer.css">
 </head>
-<body>
-    <div class="navbar" id="nav">
-      <div class="navbarInside">
-        <img src="img/desktop/EtikkenPlain.png" id="logoSmall" alt="logo">
-      <ul class="mainBar">
-        <li id="aboutNav"><a class="links" href="#about">OM OSS</a> <div class="underline" id="testing"></div></li>
-        <li id="valuesNav"><a class="links" href="#values">VÅRE VERDIER</a> <div class="underline"></div></li>
-        <li id="productsNav"><a class="links" href="#products">PRODUKTER</a> <div class="underline"></div></li>
-        <li id="webpageNav"><a class="links" target="_blank" href="http://www.etikken.no">NETTBUTIKK</a> <div class="underline"></div></li>
-        <li id="contactNav"><a class="links" href="#contact">KONTAKT</a> <div class="underline"></div></li>
-      </ul>
-      </div>
+  <body onresize="imageParallax()">
+    <div class="navbar" id="nav"></div>
+
+    <div id="imageBox">
+    <img src="img/desktop/DSC02792.JPG" alt="front image" class="frontImg" id="frontImg">
+    <div id="centerLogo">
+    <img src="img/desktop/Etikken_Logo_Stor (1).png" alt="Etikkien logo" id="logoBig">
     </div>
-
-
-    <img src="img/desktop/DSC02792.JPG" alt=".jpg" class="frontImg" id="frontImg">
-    <!--<div id="circle"></div>-->
+    </div>
 
     <div class="container">
     <div class="boxContainer">
@@ -79,10 +72,9 @@
     </div>
   </div>
 
-    <footer class="footer">
-      <p>This is a footer</p>
-    </footer>
+  <div id="commonFooter"></div>
 
+    <script type="text/javascript" src="scripts/commonMenu.js"></script>
     <script src="scripts/index.js"></script>
   </body>
 </html>

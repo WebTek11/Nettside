@@ -6,7 +6,10 @@ function imageParallax() {
   var scrollTop = window.pageYOffset;
   if (scrollTop < window.innerHeight) {
   var t = scrollTop * (0.4) - 83;
-  document.getElementById('frontImg').style.top = t+'px';
+  document.getElementById('imageBox').style.top = t+'px';
+  var wh = window.innerHeight;
+  var logoPos = -wh - t - 83;
+  document.getElementById('centerLogo').style.top = logoPos+'px';
   }
 }
 

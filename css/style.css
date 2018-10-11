@@ -38,11 +38,9 @@ li {
     float: left;
     position: relative;
     left: 120px;
-    padding: 30px 20px 30px 20px;
 }
 
 li a {
-
     display: block;
     color: #CFDB42;
     font-weight: bold;
@@ -50,27 +48,33 @@ li a {
     text-align: center;
     text-decoration: none;
     transition: color 0.2s ease;
+    padding: 30px 20px 30px 20px;
 }
 
-/*Enkel underline ved hover*/
+/*Underline og fargeendring ved hover*/
 li:hover .underline{
   display: block;
-  width: inherit;
+  width: calc(100% - 40px);
+}
+
+#logoSmall:hover {
+  background-color: lightblue !important;
 }
 
 li:hover a{
-  color: grey !important; /* Finnes kanskje metode uten å bruke important*/
+  color: lightblue !important; /* Finnes kanskje metode uten å bruke important*/
 }
 
 .underline {
+  left: 20px;
   display: none;
- height: 5px;
- width: 0px;
- background-color: grey;
- position: absolute;
- bottom: 20px;
- border-radius: 3px;
- transition: width 2s;
+  height: 5px;
+  width: 0px;
+  background-color: lightblue;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 3px;
+  transition: width 2s;
 }
 
 .mainBar {
@@ -94,26 +98,27 @@ li:hover a{
   background-color: #CFDB42;
   border-radius: 50%;
   border: 1px solid white;
+  transition: background-color 0.2s ease;
 }
 
 #aboutNav {
-  width: 90px;
+  width: 130px;
 }
 
 #valuesNav{
-  width: 160px;
+  width: 200px;
 }
 
 #productsNav{
-  width: 135px;
+  width: 175px;
 }
 
 #webpageNav{
-  width: 135px;
+  width: 175px;
 }
 
 #contactNav{
-  width: 110px;
+  width: 150px;
 }
 
 /*Navbar slutt*/
@@ -124,8 +129,8 @@ li:hover a{
   width: 100%;
   object-fit: cover;
   position: relative;
-  top: -83px;
-  z-index: -1;
+  top: -0px;
+
 
   /*  clip-path: inset(0px 0px 30% 0px);
   margin-bottom: -20%;
@@ -133,17 +138,29 @@ li:hover a{
   box-shadow: 0px 5px 3px grey*/
 }
 
-.imageBox {
+#imageBox {
   width: 100%;
-  height: 500px;
+  height: 100vh;
+  position: relative;
+  top: -83px; /*-83*/
+  z-index: -1;
 }
 
-#circle {
-  background-color: #CFDB42;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  z-index: 4;
+#centerLogo {
+  max-width: 960px;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+  top: -100vh;
+}
+#logoBig {
+  height: 60vh;
+ display: block;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+  margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 /*Fremsidebilde slutt*/
 
@@ -241,9 +258,9 @@ li:hover a{
 /*Bokser slutt*/
 
 
-/*Footer*/
+/*Footer
 #contact {
-  margin-bottom: 150px; /* for footer always on bottom*/
+  margin-bottom: 150px; /* for footer always on bottom
 }
 
 footer {
@@ -255,10 +272,10 @@ footer {
   text-align: center;
 }
 
-/*Footertekst*/
+/*Footertekst
 footer p {
   position: absolute;
   margin: auto;
   width: 100%;
   color: white;
-}
+}*/

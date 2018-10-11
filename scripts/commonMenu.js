@@ -52,16 +52,16 @@ menu_to_insert = document.createElement("div");
 
 // This is the pure HTML to be inserted. Keep it within the ``;
 menu_to_insert.innerHTML = `
-<div class="navbarInside">
-  <img src="img/desktop/EtikkenPlain.png" id="logoSmall" alt="logo">
-<ul class="mainBar">
-  <li><a class="links" id="aboutNav" href="#about">OM OSS</a> </li>
-  <li><a class="links" id="valuesNav" href="#values">VÅRE VERDIER</a> </li>
-  <li><a class="links" id="productsNav" href="#products">PRODUKTER</a> </li>
-  <li><a class="links" id="webpageNav" target="_blank" href="http://www.etikken.no">NETTBUTIKK</a> </li>
-  <li><a class="links" id="contactNav" href="#contact">KONTAKT</a> </li>
-</ul>
-</div>
+  <div class="navbarInside">
+    <a href="index.html"><img src="img/desktop/EtikkenPlain.png" id="logoSmall" alt="logo"></a>
+  <ul class="mainBar">
+    <li id="aboutNav"><a class="links" href="#about">OM OSS</a> <div class="underline"></div></li>
+    <li id="valuesNav"><a class="links" href="#values">VÅRE VERDIER</a> <div class="underline"></div></li>
+    <li id="productsNav"><a class="links" href="#products">PRODUKTER</a> <div class="underline"></div></li>
+    <li id="webpageNav"><a class="links" target="_blank" href="http://www.etikken.no">NETTBUTIKK</a> <div class="underline"></div></li>
+    <li id="contactNav"><a class="links" href="contact.html">KONTAKT</a> <div class="underline"></div></li>
+  </ul>
+  </div>
 `;
 
 menu_container = document.getElementById("nav");
