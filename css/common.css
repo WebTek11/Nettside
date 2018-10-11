@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -60,11 +61,11 @@ li:hover .underline{
 }
 
 #logoSmall:hover {
-  background-color: lightblue !important;
+  background-color: rgb(76,142,57) !important;
 }
 
 li:hover a{
-  color: lightblue !important; /* Finnes kanskje metode uten å bruke important*/
+  color: rgb(76,142,57) !important; /* Finnes kanskje metode uten å bruke important*/
 }
 
 .underline {
@@ -72,7 +73,7 @@ li:hover a{
   display: none;
   height: 5px;
   width: 0px;
-  background-color: lightblue;
+  background-color: rgb(76,142,57);
   position: absolute;
   bottom: 20px;
   border-radius: 3px;
