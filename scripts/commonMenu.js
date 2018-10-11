@@ -55,9 +55,9 @@ menu_to_insert.innerHTML = `
   <div class="navbarInside">
     <a href="index.html"><img src="img/desktop/EtikkenPlain.png" id="logoSmall" alt="logo"></a>
   <ul class="mainBar">
-    <li id="aboutNav"><a class="links" href="#about">OM OSS</a> <div class="underline"></div></li>
-    <li id="valuesNav"><a class="links" href="#values">VÅRE VERDIER</a> <div class="underline"></div></li>
-    <li id="productsNav"><a class="links" href="#products">PRODUKTER</a> <div class="underline"></div></li>
+    <li id="aboutNav"><a class="links" href="about.html">OM OSS</a> <div class="underline"></div></li>
+    <li id="valuesNav"><a class="links" href="values.html">VÅRE VERDIER</a> <div class="underline"></div></li>
+    <li id="productsNav"><a class="links" href="products.html">PRODUKTER</a> <div class="underline"></div></li>
     <li id="webpageNav"><a class="links" target="_blank" href="http://www.etikken.no">NETTBUTIKK</a> <div class="underline"></div></li>
     <li id="contactNav"><a class="links" href="contact.html">KONTAKT</a> <div class="underline"></div></li>
   </ul>
