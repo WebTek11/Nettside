@@ -5,11 +5,11 @@
   position:fixed;
   top: 0px;
   z-index: -1;
+  opacity: 0.6;
 }
 
 .container {
   width: 800px;
-  background-color: grey;
   margin: auto;
   padding: 80px;
 }
@@ -19,7 +19,6 @@ h1 {
   color: white;
   width: 100%;
   text-align: center;
-
 }
 
 .textbox {
@@ -29,10 +28,6 @@ h1 {
 
 }
 
-#verdi1 {
-  width: 50%;
-}
-
 h2 {
   text-align: center;
   color: #CFDB42;
@@ -40,4 +35,8 @@ h2 {
   font-weight: lighter;
   margin: 0;
   margin-bottom: 20px;
+}
+
+#verdi1 {
+  width: 50%;
 }
