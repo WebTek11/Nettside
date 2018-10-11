@@ -58,7 +58,7 @@
   text-align: justify;
   background-color: white;
   min-height: 300px;
-  
+
 }
 
 /* Seksjonsdeler/bakgrunnskifte */
@@ -131,14 +131,6 @@
   background-color: green;
 }
 /*Bokser slutt*/
-
-.backgroundImage {
-  background-image: url('../img/etikken.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /*Footer
 #contact {
