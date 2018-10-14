@@ -40,3 +40,12 @@ h2 {
 #verdi1 {
   width: 50%;
 }
+
+#bilde1 {
+    width: 365px;
+    height: auto;
+    align: right;
+    position: absolute;
+    z-index: +5;
+    transform: translateY(-150%) translateX(109%);
+}
