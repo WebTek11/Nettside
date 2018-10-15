@@ -17,7 +17,7 @@ border: 0;
 /* This pushes the footer to the bottom of the page */
 .container {
   min-height: 100%;
-  /* margin-bottom: -125px; */
+  margin-bottom: -125px;
 }
 
 .footerBox {
@@ -26,9 +26,13 @@ border: 0;
   margin-right: auto;
   overflow: hidden; /* Removes a white line below the footer */
 }
-.boxFront:last-of-type {
+
+.boxContainer:last-child, .textbox:last-child {
   margin-bottom: 150px;
 }
+/* .boxFront:last-of-type {
+  margin-bottom: 150px;
+} */
 
 /* Styling for the footer */
 #commonFooter {
