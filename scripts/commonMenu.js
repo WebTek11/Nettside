@@ -8,35 +8,34 @@ footer_to_insert.class = "footer"
 
 // This is the pure HTML to be inserted. Keep it within the ``;
 footer_to_insert.innerHTML = `
+<div class="footerBox">
 <div class="footerRow">
   <div class="footerColumn">
-    <p class="footerHeading">Adresse:</p>
-    <a class="footerText" href="https://goo.gl/maps/vqRM1G1322J2">Olav Tryggvasons Gate 20, 7011 Trondheim</a>
+    <p class="footerHeading">Adresse</p>
+    <p class="footerText"><a href="https://goo.gl/maps/vqRM1G1322J2">Olav Tryggvasons Gate 20 <br> 7011 Trondheim</a></p>
   </div>
 
   <div class="footerColumn">
-    <p class="footerHeading">Åpningstider:</p>
-    <p class="footerText">10:00-18:00, mandag-lørdag</p>
+    <p class="footerHeading">Åpningstider</p>
+    <p class="footerText">10:00-18:00<br>Mandag-lørdag</p>
   </div>
 
   <div class="footerColumn">
-    <p class="footerHeading">Kontakt:</p>
-    <p class="footerText"><a class="footerText" href="tel:+4794836609">+47 948 36 609</a> /
+    <p class="footerHeading">Kontakt</p>
+    <p class="footerText"><a class="footerText" href="tel:+4794836609">+47 948 36 609</a><br>
     <a class="footerText" href="mailto:epost@midlertidig.no">epost@midlertidig.no</a></p>
   </div>
-
-  <div class="footerColumn">
+</div>
     <div class="socialIcons">
       <a href="https://www.facebook.com/etikken/">
-      <img src="img/facebook.svg" alt="facebook" height="36"></a>
+      <img src="img/icon/facebook.svg" alt="facebook" height="40"></a>
+
+      <a id="footerIconEtikken" href="http://www.etikken.no/nettbutikk">
+      <img src="img/icon/etikken.png" alt="etikken" height="40"></a>
 
       <a href="https://www.instagram.com/etikken/">
-      <img src="img/instagram.png" alt="instagram" height="36"></a>
-
-      <a href="http://www.etikken.no/nettbutikk">
-      <img src="img/etikken.png" alt="etikken" height="36"></a>
+      <img src="img/icon/instagram.png" alt="instagram" height="40"></a>
     </div>
-  </div>
 </div>
 `;
 
