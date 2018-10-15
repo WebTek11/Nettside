@@ -19,6 +19,7 @@ h1 {
   color: white;
   width: 100%;
   text-align: center;
+  text-shadow: 3px 3px 12px #6f6f6f;
 }
 
 .textbox {
