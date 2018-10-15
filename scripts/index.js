@@ -1,4 +1,5 @@
 navbarChange()
+setBoxHeight()
 
 document.onscroll = function() {navbarChange(), imageParallax()};
 
@@ -12,6 +13,15 @@ function imageParallax() {
   document.getElementById('centerLogo').style.top = logoPos+'px';
   }
 }
+
+function setBoxHeight() {
+  var wh = window.innerHeight - 83;
+  var boxes = document.getElementsByClassName('boxContainer');
+  for (var i = 0; i < boxes.length; i++) {
+    boxes[i].style.height = wh+'px';
+  }
+}
+
 
 function navbarChange() {
   var wh = window.innerHeight;
