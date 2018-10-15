@@ -17,7 +17,7 @@ border: 0;
 /* This pushes the footer to the bottom of the page */
 .container {
   min-height: 100%;
-  margin-bottom: -125px;
+  /* margin-bottom: -125px; */
 }
 
 .footerBox {
