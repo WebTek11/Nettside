@@ -5,7 +5,7 @@ border: 0;
 /* This splits the footer into 4 columns */
 .footerColumn {
   float: left;
-  width: 25%;
+  width: 33.33%;
 }
 
 .footerRow::after {
@@ -17,38 +17,61 @@ border: 0;
 /* This pushes the footer to the bottom of the page */
 .container {
   min-height: 100%;
-  margin-bottom: -36px;
+  margin-bottom: -125px;
 }
 
-#commonFooter {
-  height: 36px;
+.footerBox {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /* Removes a white line below the footer */
 }
-
 .boxFront:last-of-type {
   margin-bottom: 150px;
 }
 
 /* Styling for the footer */
 #commonFooter {
-    background-color: darkgrey;
+    height: 125px;
+    /* background-color: #F6F7EF; */
+    background-color: white;
     color: green;
-    overflow: hidden; /* Removes a white line below the footer */
     text-align: center;
 }
 
+#commonFooter p {
+  margin-top: 5px;
+}
+
 .footerHeading {
-  color: #F6F7EF;
-  background-color: darkgrey;
-  font-size: 16px;
+  color: green;
+  font-size: 18px;
 }
 
 .footerText {
-  background-color: darkgrey;
   color: green;
-  font-size: 14px;
-  text-decoration: none;
-
+  font-size: 15px;
 }
+
+.footerText a {
+  color: green;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.socialIcons {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#footerIconEtikken {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* This changes the footer into a single column when needed */
 @media screen and (max-width: 960px) {
   .footerColumn {
@@ -58,5 +81,8 @@ border: 0;
   }
   #commonFooter {
     height: auto;
+  }
+  .socialIcons {
+    position: relative;
   }
 }
