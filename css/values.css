@@ -47,5 +47,5 @@ h2 {
     align: right;
     position: absolute;
     z-index: +5;
-    transform: translateY(-150%) translateX(109%);
+    transform: translateY(-150%) translateX(108.5%);
 }
