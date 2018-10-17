@@ -51,8 +51,10 @@ menu_to_insert = document.createElement("div");
 
 // This is the pure HTML to be inserted. Keep it within the ``;
 menu_to_insert.innerHTML = `
-  <div class="navbarInside">
-    <a href="index.html"><img src="img/desktop/EtikkenPlain.png" id="logoSmall" alt="logo"></a>
+<div class="navbarInside">
+  <a href="index.html"><img src="img/desktop/EtikkenPlain.png" id="logoSmall" alt="logo"></a>
+  <a id="burger" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/burger.svg" alt="icon"></a>
+  <a id="cross" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/cross.svg" alt="icon"></a>
   <ul class="mainBar">
     <li id="aboutNav"><a class="links" href="about.html">OM OSS</a> <a href="about.html" class="underline"></a></li>
     <li id="valuesNav"><a class="links" href="values.html">VÅRE VERDIER</a> <a href="values.html" class="underline"></a></li>
@@ -60,8 +62,35 @@ menu_to_insert.innerHTML = `
     <li id="webpageNav"><a class="links" target="_blank" href="http://www.etikken.no">NETTBUTIKK</a> <a href="http://www.etikken.no" class="underline"></a></li>
     <li id="contactNav"><a class="links" href="contact.html">KONTAKT</a> <a href="contact.html" class="underline"></a></li>
   </ul>
-  </div>
+</div>
 `;
 
 menu_container = document.getElementById("nav");
 menu_container.appendChild(menu_to_insert);
+
+// Responsive navbar
+function responsiveNav() {
+  // Opens and closes the menu
+  let i = document.getElementById("nav")
+  if (i.className === "navbar") {
+    i.className += "_responsive";
+  }
+  else {
+    i.className = "navbar"
+  }
+
+  // Hides the footer when the menu is open
+  let f = document.getElementById("commonFooter")
+  if (i.className === "navbar_responsive") {
+    f.style.display = "none";
+  } else {
+    f.style.display = "block";
+  }
+  // Hides the content when the menu is open
+  let c = document.querySelector(".container")
+  if (i.className === "navbar_responsive") {
+    c.style.display = "none";
+  } else {
+    c.style.display = "block";
+  }
+}

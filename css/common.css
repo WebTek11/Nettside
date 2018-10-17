@@ -77,10 +77,9 @@ li:hover .underline{
   position: relative;
   bottom: 20px;
   border-radius: 2px;
-  transition: width 0.3s, ;
+  transition: width 0.3s;
   -webkit-transition: width 0.3s ease;
   padding: 0;
-
 }
 
 .mainBar {
@@ -127,4 +126,79 @@ li:hover .underline{
   width: 150px;
 }
 
+/* Responsive navbar */
+.navbar .navIcon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .mainBar * {
+    display: none;
+    width: auto !important;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .container {
+    width: auto !important;
+    padding: 10px !important;
+  }
+
+  #nav {
+    height: 83px;
+  }
+
+  .underline {
+    max-width: 100px;
+  }
+  .navbar_responsive .mainBar {
+    overflow: visible;
+    padding-top: 100px;
+  }
+
+  .navbar_responsive {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    top: 100px;
+    font-size: 30px;
+  }
+
+  .navbar_responsive .mainBar * {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    left: 0px;
+    color: white;
+    text-shadow: 1px 1px 3px #6f6f6f;
+  }
+
+  .navIcon {
+    float: right;
+    margin-right: 51px;
+    margin-top: 11px;
+  }
+
+  #logoSmall {
+    float: left;
+  }
+
+  .navbar_responsive #cross {
+    display: block;
+  }
+
+  .navbar_responsive #burger {
+    display: none;
+  }
+
+  .navbar #burger {
+    display: block;
+  }
+}
 /*Navbar slutt*/
