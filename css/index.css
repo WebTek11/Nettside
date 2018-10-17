@@ -58,9 +58,9 @@
 .boxBorder {
   width: 400px;
   padding: 25px;
-  box-shadow: 2px 2px 2px grey;
+  box-shadow: 1px 1px 2px #a2a2a2;
   background-color: white;
-  height: 300px;
+  /*max-height: 300px;*/
   z-index: 5;
 }
 
@@ -84,11 +84,11 @@
 /*Tekstbokser partall*/
 .boxContainer:nth-child(even) .boxFront .boxBorder{
   position: relative;
-  left: 540px;
+  left: 400px;
 }
 
 .boxContainer:nth-child(even) .boxFront h2{
-  left: 540px;
+  left: 400px;
 }
 
 /*Tekstbokser oddetall*/
@@ -121,20 +121,18 @@
   color: #CFDB42;
   font-size: 50px;
   font-weight: 200;
+  text-shadow: 1.5px 1.5px 2px #a2a2a2;
 }
 
 /*Se mer-boks*/
-.moreBox {
-  border-style: solid;
-  border-width: 1px;
-  border-color: green;
-  padding: 25px;
-  position: absolute;
-  left: 135px;
-  bottom: 70px;
-  width: 80px;
-  text-align: center;
-  visibility: hidden;
+a {
+  text-decoration: none;
+  color: #CFDB42;
+}
+
+/*Linker skifter farge ved hover. Skal overskriftene også gjøre dette?*/
+a:hover {
+  color: rgb(76,142,57);
 }
 
 .moreBox:hover {
@@ -155,7 +153,7 @@
 .imgSmall {
   height: 65vh;
   object-fit: cover;
-  width: 600px;
+  width: 500px;
   position: absolute;
   opacity: 0.8;
 }

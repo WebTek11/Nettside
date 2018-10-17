@@ -17,9 +17,24 @@ function imageParallax() {
 function setBoxHeight() {
   var wh = window.innerHeight - 83;
   var boxes = document.getElementsByClassName('boxContainer');
-  for (var i = 0; i < boxes.length; i++) {
-    boxes[i].style.height = wh+'px';
+  var images = document.getElementsByClassName('imgSmall')
+  if (wh <= 460){
+    for (var i = 0; i < boxes.length; i++) {
+      boxes[i].style.height = '460px';
+    }
+    for (var i = 0; i < images.length; i++) {
+      images[i].style.height = '360px';
+    }
   }
+  else {
+    for (var i = 0; i < boxes.length; i++) {
+      boxes[i].style.height = wh+'px';
+    }
+    for (var i = 0; i < images.length; i++) {
+      images[i].style.height = '65vh';
+    }
+  }
+
 }
 
 
