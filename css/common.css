@@ -138,6 +138,17 @@ li:hover a{
     overflow: visible;
   }
 
+  .navbar_responsive {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    top: 100px;
+    font-size: 30px;
+    width: auto !important;
+  }
+
   .navbar_responsive .mainBar * {
     display: block;
     float: none;
