@@ -1,5 +1,7 @@
 #googlemaps {
 border: 0;
+max-width: 100%;
+max-height: 100%;
 }
 
 /* This splits the footer into 3 columns */
@@ -27,10 +29,6 @@ body {
   overflow: hidden; /* Removes a white line below the footer */
 }
 
-/* .textbox:last-child {
-  margin-bottom: 125px;
-} */
-
 /* Styling for the footer */
 #commonFooter {
     height: 125px;
@@ -39,7 +37,7 @@ body {
     color: green;
     text-align: center;
     position: absolute;
-    bottom: -125;
+    bottom: -125px;
     width: 100%
 }
 
@@ -65,10 +63,7 @@ body {
 
 .socialIcons {
   text-align: center;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  margin-top: 10px;
 }
 
 #footerIconEtikken {
@@ -85,8 +80,6 @@ body {
   }
   #commonFooter {
     height: auto;
-  }
-  .socialIcons {
     position: relative;
   }
 }

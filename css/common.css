@@ -132,11 +132,17 @@ li:hover a{
 @media screen and (max-width: 960px) {
   .mainBar * {
     display: none;
+    width: auto !important;
   }
 
-  /* .container {
+  .navbar {
+    position: relative;
+  }
+
+  .container {
     width: auto !important;
-  } */
+    padding: 10px !important;
+  }
 
   #nav {
     height: 83px;
@@ -156,7 +162,6 @@ li:hover a{
     left: 0px;
     top: 100px;
     font-size: 30px;
-    width: auto !important;
   }
 
   .navbar_responsive .mainBar * {
@@ -165,28 +170,23 @@ li:hover a{
     margin-left: auto;
     margin-right: auto;
     font-size: 30px;
-    width: auto !important;
     left: 0px;
 
-    /* Finn en bedre metode her, teksten må være lesbar uansett bakgrunn. */
+    /* Finn gjerne en bedre metode her, teksten må være lesbar uansett bakgrunn. */
+    color: white;
     text-shadow: 1px 1px 3px #6f6f6f;
   }
 
   .navIcon {
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    left: auto;
+    float: right;
+    margin-right: 51px;
+    margin-top: 11px;
+
   }
 
   #logoSmall {
-    position: fixed;
-    right: auto;
-    left: 15px;
-    right: auto;
-    top: 15px;
-    padding: 0;
-    margin: 0;
+    float: left;
+
   }
 
   .navbar_responsive #cross {
