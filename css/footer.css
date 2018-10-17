@@ -2,7 +2,7 @@
 border: 0;
 }
 
-/* This splits the footer into 4 columns */
+/* This splits the footer into 3 columns */
 .footerColumn {
   float: left;
   width: 33.33%;
@@ -14,11 +14,11 @@ border: 0;
   clear: both;
 }
 
-/* This pushes the footer to the bottom of the page */
-.container {
-  /* min-height: 100%; */
-  margin-bottom: -125px;
+body {
+  margin-bottom: 125px;
 }
+
+/* This pushes the footer to the bottom of the page */
 
 .footerBox {
   max-width: 960px;
@@ -27,9 +27,9 @@ border: 0;
   overflow: hidden; /* Removes a white line below the footer */
 }
 
-.textbox:last-child {
+/* .textbox:last-child {
   margin-bottom: 125px;
-}
+} */
 
 /* Styling for the footer */
 #commonFooter {
@@ -39,7 +39,7 @@ border: 0;
     color: green;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    bottom: -125;
     width: 100%
 }
 

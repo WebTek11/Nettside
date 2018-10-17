@@ -70,11 +70,27 @@ menu_container.appendChild(menu_to_insert);
 
 // Responsive navbar
 function responsiveNav() {
+  // Opens and closes the menu
   let i = document.getElementById("nav")
   if (i.className === "navbar") {
     i.className += "_responsive";
   }
   else {
     i.className = "navbar"
+  }
+
+  // Hides the footer when the menu is open
+  let f = document.getElementById("commonFooter")
+  if (i.className === "navbar_responsive") {
+    f.style.display = "none";
+  } else {
+    f.style.display = "block";
+  }
+  // Hides the content when the menu is open
+  let c = document.querySelector(".container")
+  if (i.className === "navbar_responsive") {
+    c.style.display = "none";
+  } else {
+    c.style.display = "block";
   }
 }
