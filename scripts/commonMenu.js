@@ -56,11 +56,11 @@ menu_to_insert.innerHTML = `
   <a id="burger" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/burger.svg" alt="icon"></a>
   <a id="cross" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/cross.svg" alt="icon"></a>
 <ul class="mainBar">
-  <li id="aboutNav"><a class="links" href="about.html">OM OSS</a> <div class="underline"></div></li>
-  <li id="valuesNav"><a class="links" href="values.html">VÅRE VERDIER</a> <div class="underline"></div></li>
-  <li id="productsNav"><a class="links" href="products.html">PRODUKTER</a> <div class="underline"></div></li>
-  <li id="webpageNav"><a class="links" target="_blank" href="http://www.etikken.no">NETTBUTIKK</a> <div class="underline"></div></li>
-  <li id="contactNav"><a class="links" href="contact.html">KONTAKT</a> <div class="underline"></div></li>
+  <li id="aboutNav"><a class="links" href="about.html">OM OSS</a> <a href="about.html" class="underline"></a></li>
+  <li id="valuesNav"><a class="links" href="values.html">VÅRE VERDIER</a> <a href="values.html" class="underline"></a></li>
+  <li id="productsNav"><a class="links" href="products.html">PRODUKTER</a> <a href="products.html" class="underline"></a></li>
+  <li id="webpageNav"><a class="links" target="_blank" href="http://www.etikken.no">NETTBUTIKK</a> <a href="http://www.etikken.no" class="underline"></a></li>
+  <li id="contactNav"><a class="links" href="contact.html">KONTAKT</a> <a href="contact.html" class="underline"></a></li>
 </ul>
 </div>
 `;

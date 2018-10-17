@@ -34,7 +34,6 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0 auto 0 auto;
-
 }
 
 li {
@@ -51,13 +50,7 @@ li a {
     text-align: center;
     text-decoration: none;
     transition: color 0.2s ease;
-    padding: 30px 20px 30px 20px;
-}
-
-/*Underline og fargeendring ved hover*/
-li:hover .underline{
-  display: block;
-  width: calc(100% - 40px);
+    padding: 30px 20px 25px 20px;
 }
 
 #logoSmall:hover {
@@ -65,19 +58,26 @@ li:hover .underline{
 }
 
 li:hover a{
-  color: rgb(76,142,57) !important; /* Finnes kanskje metode uten å bruke important*/
+  /* Finnes kanskje metode uten å bruke important, overskriver javascript*/
+  color: rgb(76,142,57) !important;
+  text-shadow: none !important;
+}
+/*Underline og fargeendring ved hover*/
+li:hover .underline{
+  width: calc(100% - 40px);
 }
 
 .underline {
-  left: 20px;
-  display: none;
+  margin: auto;
   height: 5px;
   width: 0px;
   background-color: rgb(76,142,57);
-  position: absolute;
+  position: relative;
   bottom: 20px;
-  border-radius: 3px;
-  transition: width 2s;
+  border-radius: 2px;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s ease;
+  padding: 0;
 }
 
 .mainBar {
