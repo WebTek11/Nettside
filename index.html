@@ -11,13 +11,15 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/slideshow.css">
     <link rel="icon" href="img/icon/etikken.png" type="image/png">
 </head>
-  <body onresize="imageParallax(), setBoxHeight()">
+  <body onresize="imageParallax(), setBoxHeight()" onkeydown="disco(event)">
     <div class="navbar" id="nav"></div>
 
     <div id="imageBox">
     <img src="img/desktop/lyng.jpg" alt="front image" class="frontImg" id="frontImg">
     <div id="centerLogo">
-    <img src="img/desktop/Etikken_Logo_Stor.png" alt="Etikken logo" id="logoBig">
+      <div class="logo" id="logo">
+        <img src="img/desktop/etikken.png" alt="Etikken logo" id="logoBig">
+      </div>
     </div>
     </div>
 

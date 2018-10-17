@@ -65,7 +65,9 @@ li:hover .underline{
 }
 
 li:hover a{
-  color: rgb(76,142,57) !important; /* Finnes kanskje metode uten å bruke important*/
+  /* Finnes kanskje metode uten å bruke important, overskriver javascript*/
+  color: rgb(76,142,57) !important;
+  text-shadow: none !important;
 }
 
 .underline {
