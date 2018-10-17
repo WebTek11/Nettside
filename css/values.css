@@ -23,3 +23,13 @@
     z-index: +5;
     transform: translateY(-150%) translateX(-10%);
 }
+
+/*Du er inne på siden*/
+#valuesNav .underline{
+  width: calc(100% - 40px) !important;
+}
+
+#valuesNav a {
+  color: rgb(76,142,57) !important;
+  text-shadow: none !important;
+}
