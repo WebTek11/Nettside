@@ -170,3 +170,80 @@ p a:hover {
   top: 5vh;
 }
 /*Bokser slutt*/
+
+@media screen and (max-width: 960px) {
+  .frontImg {
+    position: fixed;
+  }
+
+  #centerLogo {
+    top: 0;
+  }
+
+  .boxFront {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-width: 960px;
+  }
+
+  .boxBorder {
+    width: 100%;
+    min-height: 100%;
+    box-shadow: none;
+    background-color: inherit !important;
+    padding: 5%;
+  }
+  .imgSmall {
+    width: 100%;
+    height: 100%;
+    top: 0 !important;
+    right: 0 !important;
+    opacity: 0.2;
+  }
+
+  .boxContainer {
+    padding: 0;
+    height: auto;
+    margin-bottom: 5%;
+    height: auto !important;
+    border-radius: 2%;
+    overflow: hidden;
+  }
+  .boxFront h2 {
+    width: 100%;
+    padding: 15px 0 0 0;
+    text-align: center;
+    left: 0px;
+    top: 0;
+    margin: 0 !important;
+    font-size: 270%;
+    max-width: 100%;
+  }
+  .imageBox {
+    top: 25vh;
+  }
+
+  .boxContainer:nth-child(even) .boxFront .boxBorder {
+    left: 0;
+  }
+  .boxContainer:nth-child(even) .boxFront h2 {
+    left: 0;
+  }
+  .boxContainer:nth-child(even) .imgSmall {
+    left: 0;
+  }
+  .boxFront p {
+    font-size: 125%;
+    color: #121212;
+  }
+  .logo {
+    height: 70vw;
+    width: 70vW;
+    max-height: 70vh;
+    max-width: 70vh;
+  }
+  p a {
+    color: green;
+  }
+}
