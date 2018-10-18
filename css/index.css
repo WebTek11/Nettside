@@ -130,8 +130,8 @@ a {
   color: #CFDB42;
 }
 
-/*Linker skifter farge ved hover. Skal overskriftene også gjøre dette?*/
-a:hover {
+/*Les mer... skifter farge ved hover.*/
+p a:hover {
   color: rgb(76,142,57);
 }
 
@@ -156,6 +156,8 @@ a:hover {
   width: 500px;
   position: absolute;
   opacity: 0.8;
+  border-radius: 0%;
+  overflow: hidden;
 }
 
 .boxContainer:nth-child(even) .imgSmall{
