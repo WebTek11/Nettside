@@ -93,4 +93,5 @@ function responsiveNav() {
   } else {
     c.style.display = "block";
   }
+  // Hides Underline
 }
