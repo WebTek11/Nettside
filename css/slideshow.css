@@ -1,7 +1,7 @@
 * {box-sizing:border-box}
 
 /* Slideshow container */
-.slideshow-container {
+/*.slideshow-container {
   max-width: 1000px;
   width: 70%;
   height: auto;
@@ -9,11 +9,18 @@
   position: absolute;
   transform: translateY(-100%) translateX(50%);
   margin: auto;
-}
+}*/
 
 /* Hide the images by default */
 .mySlides {
     display: none;
+    height: 100%;
+}
+
+.imgSlides {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Fading animation */
