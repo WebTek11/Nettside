@@ -62,7 +62,7 @@ li a {
 li:hover a{
   /* Finnes kanskje metode uten å bruke important, overskriver javascript*/
   color: rgb(76,142,57) !important;
-  text-shadow: none !important;
+  text-shadow: none;
 }
 /*Underline og fargeendring ved hover*/
 li:hover .underline{
@@ -139,6 +139,8 @@ li:hover .underline{
 
   .navbar {
     position: relative;
+    background-color: rgb(255,255,255,0);
+    box-shadow: none;
   }
 
   .container {
@@ -180,13 +182,23 @@ li:hover .underline{
   }
 
   .navIcon {
-    float: right;
-    margin-right: 51px;
-    margin-top: 11px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 4px;
+    box-sizing: content-box;
+    border: 1px solid green;
   }
 
   #logoSmall {
-    float: left;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    margin: 0;
   }
 
   .navbar_responsive #cross {
@@ -200,5 +212,11 @@ li:hover .underline{
   .navbar #burger {
     display: block;
   }
+
+  .underline {
+    display: none !important;
+  }
+
+
 }
 /*Navbar slutt*/

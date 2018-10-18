@@ -93,5 +93,20 @@ function responsiveNav() {
   } else {
     c.style.display = "block";
   }
-  // Hides Underline
+  // Hides Logo Front Page
+  let g = document.getElementById("logo")
+  if (i.className === "navbar_responsive") {
+    g.style.display = "none";
+  }
+  else {
+    g.style.display = "block";
+  }
+
+  let z = document.body
+  if (i.className === "navbar_responsive") {
+    z.style.height = "100%";
+  }
+  else {
+    z.style.height = "auto";
+  }
 }
