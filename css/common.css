@@ -182,13 +182,13 @@ li:hover .underline{
     position: fixed;
     top: 10px;
     right: 10px;
-    background-color: white;
+    background-color: none;
     border-radius: 50%;
     height: 50px;
     width: 50px;
     padding: 4px;
     box-sizing: content-box;
-    border: 1px solid green;
+    border: 0px solid white;
   }
 
   #logoSmall {
