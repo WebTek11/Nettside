@@ -1,8 +1,16 @@
 * {box-sizing:border-box}
 
+<<<<<<< HEAD
 /* Slideshow container */
 /*.slideshow-container {
   max-width: 1000px;
+=======
+img {
+  width: 100%;
+}
+
+.slideshow-container {
+>>>>>>> 58b22b28f3170d79a11f6dc04f27a64ece47ceec
   width: 70%;
   height: auto;
   align: right;
