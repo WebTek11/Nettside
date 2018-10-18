@@ -23,7 +23,7 @@ footer_to_insert.innerHTML = `
   <div class="footerColumn">
     <p class="footerHeading">Kontakt</p>
     <p class="footerText"><a class="footerText" href="tel:+4794836609">+47 948 36 609</a><br>
-    <a class="footerText" href="mailto:epost@midlertidig.no">epost@midlertidig.no</a></p>
+    <a class="footerText" href="mailto:post@etikken.no">post@etikken.no</a></p>
   </div>
 </div>
     <div class="socialIcons">
