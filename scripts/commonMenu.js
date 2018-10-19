@@ -52,7 +52,7 @@ menu_to_insert = document.createElement("div");
 // This is the pure HTML to be inserted. Keep it within the ``;
 menu_to_insert.innerHTML = `
 <div class="navbarInside">
-  <a href="index.html"><img src="img/desktop/EtikkenPlain.png" id="logoSmall" alt="logo"></a>
+  <a href="index.html" id="logoStore" ><img src="img/desktop/EtikkenPlain.png" id="logoSmall" alt="logo"></a>
   <a id="burger" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/burger.svg" alt="icon"></a>
   <a id="cross" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/cross.svg" alt="icon"></a>
   <ul class="mainBar">
@@ -93,20 +93,31 @@ function responsiveNav() {
   } else {
     c.style.display = "block";
   }
-  // Hides Logo Front Page
-  let g = document.getElementById("logo")
-  if (i.className === "navbar_responsive") {
-    g.style.display = "none";
+  // Hides Logo Front Page, only on front page
+  if (document.getElementById("logo")) {
+    let g = document.getElementById("logo")
+    if (i.className === "navbar_responsive") {
+      g.style.display = "none";
+      document.getElementById('frontImg').style.opacity = "0.6"
+    }
+    else {
+      g.style.display = "block";
+      document.getElementById('frontImg').style.opacity = "1"
+    }
   }
-  else {
-    g.style.display = "block";
-  }
-
+  // Fixes empty spacing on resposive nav
   let z = document.body
   if (i.className === "navbar_responsive") {
     z.style.height = "100%";
   }
   else {
     z.style.height = "auto";
+  }
+  let y = document.getElementById("logoSmall")
+  if (i.className === "navbar_responsive") {
+    y.style.display = "block";
+  }
+  else {
+    y.style.display = "none";
   }
 }

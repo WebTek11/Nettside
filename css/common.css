@@ -180,22 +180,28 @@ li:hover .underline{
 
   .navIcon {
     position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: none;
+    top: 15px;
+    right: 15px;
+    background-color: white;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    padding: 4px;
+    height: 30px;
+    width: 30px;
+    padding: 7px;
     box-sizing: content-box;
-    border: 0px solid white;
+    box-shadow: 0px 0px 7px grey;
+  }
+
+  .navIcon img {
+    height: 30px;
+    width: 30px;
   }
 
   #logoSmall {
-    position: fixed;
+    /*position: fixed;
     top: 10px;
     left: 10px;
-    margin: 0;
+    margin: 0;*/
+    display: none;
   }
 
   .navbar_responsive #burger {
@@ -208,6 +214,11 @@ li:hover .underline{
 
   .underline {
     display: none !important;
+  }
+  .navbar_responsive #logoSmall {
+    position: absolute;
+    margin: 15px 0 0 50%;
+    transform: translate(-50%, 0%);
   }
 
 

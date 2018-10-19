@@ -32,3 +32,9 @@
 #valuesNav a {
   color: rgb(76,142,57) !important;
 }
+
+@media screen and (max-width: 960px) {
+  #valuesNav a {
+    color: #CFDB42 !important;
+  }
+}
