@@ -1,10 +1,4 @@
 /* Temp. CSS for contact.html, merge with common.css */
-#googlemaps {
-border: 0;
-max-width: 100%;
-max-height: 100%;
-}
-
 #contactText a {
   text-decoration: none;
   color: #CFDB42;
