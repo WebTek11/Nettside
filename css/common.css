@@ -137,6 +137,11 @@ li:hover .underline{
     width: auto !important;
   }
 
+  p {
+    font-size: 125%;
+    color: #121212;
+  }
+
   .navbar {
     position: relative;
     background-color: rgb(255,255,255,0);

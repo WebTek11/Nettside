@@ -234,10 +234,7 @@ p a:hover {
   .boxContainer:nth-child(even) .imgSmall {
     left: 0;
   }
-  .boxFront p {
-    font-size: 125%;
-    color: #121212;
-  }
+
   .logo {
     height: 70vw;
     width: 70vW;
