@@ -1,0 +1,14 @@
+/*Viser at man er inne på siden*/
+#aboutNav .underline{
+  width: calc(100% - 40px) !important;
+}
+
+#aboutNav a {
+  color: rgb(76,142,57) !important;
+}
+
+@media screen and (max-width: 960px) {
+  #aboutNav a {
+    color: #CFDB42 !important;
+  }
+}
