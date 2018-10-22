@@ -1,8 +1,8 @@
-#verdi1 {
+#verdi1,#verdi3 {
   width: 50%;
 }
 
-#bilde1 {
+#bilde1,#bilde3 {
     width: 365px;
     height: auto;
     position: absolute;
@@ -10,13 +10,13 @@
     transform: translateY(-150%) translateX(108.5%);
 }
 
-#verdi2 {
+#verdi2,#verdi4 {
   width: 50%;
   position: relative;
   left: 400px;
 }
 
-#bilde2 {
+#bilde2,#bilde4 {
     width: 425px;
     height: auto;
     position: absolute;
