@@ -19,9 +19,6 @@
     margin: auto;
     padding: 80px;
   }
-  .textbox {
-    margin-top: 100px;
-  }
 }
 
 h1 {
@@ -30,6 +27,7 @@ h1 {
   width: 100%;
   text-align: center;
   text-shadow: 3px 3px 12px #6f6f6f;
+  margin-top: 75px;
 }
 
 .textbox {
@@ -50,7 +48,6 @@ h2 {
   .textbox {
     width: auto !important;
     left: 0 !important;
-    margin-top: 10%;
   }
   .imgSmall {
     transform: none !important;
