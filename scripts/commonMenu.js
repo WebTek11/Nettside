@@ -27,11 +27,11 @@ footer_to_insert.innerHTML = `
   </div>
 </div>
     <div class="socialIcons">
-      <a href="https://www.facebook.com/etikken/">
-      <img src="img/icon/facebook.svg" alt="facebook" height="40"></a>
+      <a href="http://www.etikken.no/nettbutikk">
+      <img src="img/icon/twitter.svg" alt="twitter" height="40"></a>
 
-      <a id="footerIconEtikken" href="http://www.etikken.no/nettbutikk">
-      <img src="img/icon/etikken.png" alt="etikken" height="40"></a>
+      <a id="footerIconCenter" "https://www.facebook.com/etikken/">
+      <img src="img/icon/facebook.svg" alt="facebook" height="40"></a>
 
       <a href="https://www.instagram.com/etikken/">
       <img src="img/icon/instagram.png" alt="instagram" height="40"></a>
