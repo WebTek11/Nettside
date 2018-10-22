@@ -18,3 +18,13 @@ max-height: 100%;
     color: #CFDB42 !important;
   }
 }
+
+/* Temp. CSS for contact.html, merge with common.css? */
+#contactText a {
+  text-decoration: none;
+  color: #CFDB42;
+}
+
+#contactText p a:hover {
+  color: rgb(76,142,57);
+}
