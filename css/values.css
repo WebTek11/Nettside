@@ -37,4 +37,8 @@
   #valuesNav a {
     color: #CFDB42 !important;
   }
+  figure {
+    position: relative;
+    margin: 0;
+  }
 }
