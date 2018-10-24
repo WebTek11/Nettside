@@ -28,7 +28,7 @@
       </div>
 
       <figure>
-        <img src="img/mobile/jordbruk1.jpg" alt="fairtrade" class="imgSmall" id="bilde1">
+        <a href="#" onclick="return false;"><img src="img/mobile/jordbruk1.jpg" alt="fairtrade" class="imgSmall" id="bilde1" onclick="imgexpand(0)"></a>
       </figure>
 
       <div class="textbox" id="verdi2">
@@ -37,7 +37,7 @@
       </div>
 
       <figure>
-        <img src="img/mobile/økologiskevarerbutikk.jpg" alt="økologiske varer" class="imgSmall" id="bilde2">
+        <a href="#" onclick="return false;"><img src="img/mobile/økologiskevarerbutikk.jpg" alt="økologiske varer" class="imgSmall" id="bilde2" onclick="imgexpand(1)"></a>
       </figure>
 
       <div class="textbox" id="verdi3">
@@ -46,7 +46,7 @@
       </div>
 
       <figure>
-        <img src="img/mobile/beans.jpg" alt="dyrevelferd" class="imgSmall" id="bilde3">
+        <a href="#" onclick="return false;"><img src="img/mobile/beans.jpg" alt="dyrevelferd" class="imgSmall" id="bilde3" onclick="imgexpand(2)"></a>
       </figure>
 
       <div class="textbox" id="verdi4">
@@ -55,11 +55,19 @@
       </div>
 
       <figure>
-        <img src="img/mobile/krydderbutikk.jpg" alt="emballasjefritt" class="imgSmall" id="bilde4">
+        <a href="#" onclick="return false;"><img src="img/mobile/krydderbutikk.jpg" alt="emballasjefritt" class="imgSmall" id="bilde4" onclick="imgexpand(3)"></a>
       </figure>
 
     </div>
     <div id="commonFooter"></div>
+    <div class="imgexpand" id="imgexpand" onclick="imageclose()">
+      <img src="img/originals/jordbruk1.jpg" alt="emballasjefritt" class="original" id="original1">
+      <img src="img/originals/økologiskevarerbutikk.jpg" alt="emballasjefritt" class="original" id="original2">
+      <img src="img/originals/beans.jpg" alt="emballasjefritt" class="original" id="original3">
+      <img src="img/originals/krydderbutikk.jpg" alt="emballasjefritt" class="original" id="original4">
+
+    </div>
     <script src="scripts/commonMenu.js"></script>
+    <script src="scripts/imageexpander.js"></script>
   </body>
 </html>
