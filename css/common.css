@@ -26,7 +26,6 @@ body {
   top: 0px;
   box-shadow: 0px 2px 2px grey;
   z-index: 10;
-  /*opacity: 0.6;*/
 }
 
 ul {
@@ -59,10 +58,10 @@ li a {
 }
 
 li:hover a{
-  /* Finnes kanskje metode uten å bruke important, overskriver javascript*/
   color: rgb(76,142,57) !important;
   text-shadow: none;
 }
+
 /*Underline og fargeendring ved hover*/
 li:hover .underline{
   width: calc(100% - 40px);
