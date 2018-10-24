@@ -1,11 +1,10 @@
 navbarChange()
 setBoxHeight()
+controlFunc()
 
-nametest()
+document.onscroll = controlFunc;
 
-document.onscroll = nametest;
-
-function nametest() {
+function controlFunc() {
   if (window.innerWidth > 960){
     navbarChange()
     imageParallax()}
@@ -53,7 +52,6 @@ function setBoxHeight() {
       }
     }
   }
-
 }
 
 
@@ -74,11 +72,6 @@ function navbarChange() {
       document.getElementById('nav').style.boxShadow = '0px 1px 10px white';
 
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,'+a+')';
-
-      /*const redOri = 19;
-      const greenOri = 14;
-      const blueOri = 72;
-      const shadowOri = 2;*/
 
       var redNew = 100 - 19 * a;
       var greenNew = 100 - 14 * a;

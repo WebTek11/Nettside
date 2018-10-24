@@ -63,6 +63,10 @@ body {
   padding-right: 15px;
 }
 
+a:hover {
+  color: #CFDB42;
+}
+
 /* This changes the footer into a single column when needed */
 @media screen and (max-width: 960px) {
   .footerColumn {
