@@ -212,7 +212,7 @@ p a:hover {
   }
   .boxFront h2 {
     width: 100%;
-    padding: 30px 0 0 5%;
+    padding: 20px 0 0 5%;
     text-align: left;
     left: 0px;
     top: 0;
@@ -240,8 +240,5 @@ p a:hover {
     width: 70vW;
     max-height: 70vh;
     max-width: 70vh;
-  }
-  #container {
-    padding: 0 !important;
   }
 }
