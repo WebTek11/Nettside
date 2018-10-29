@@ -13,7 +13,16 @@
   </head>
   <body onresize="setNavBarResize()">
     <div class="navbar" id="nav"></div>
-    <img src="img/desktop/produkter.jpg" alt="background image" class="backImg" id="backImg">
+
+    <picture>
+      <source srcset="img/2560/produkter.jpg" media="(min-width: 1921px)">
+      <source srcset="img/1920/produkter.jpg" media="(min-width: 1681px)">
+      <source srcset="img/1680/produkter.jpg" media="(min-width: 1281px)">
+      <source srcset="img/1280/produkter.jpg" media="(min-width: 961px)">
+      <source srcset="img/960/produkter.jpg" media="(min-width: 641px)">
+      <img src="img/640/produkter.jpg" alt="background image" class="backImg" id="backImg">
+    </picture>
+
     <div class="container">
       <h1>VÅRE PRODUKTER</h1>
       <div class="textbox">
