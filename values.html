@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,67 +10,110 @@
     <title>Verdier</title>
     <link rel="icon" href="img/icon/etikken.png" type="image/png">
   </head>
-  <body onresize="setNavBarResize()">
+  <body>
     <div class="navbar" id="nav"></div>
-    <img src="img/desktop/beans.jpg" alt="background image" class="backImg" id="backImg">
+    <img src="img/desktop/jordbruk2.jpg" alt="background image" class="backImg" id="backImg">
     <div class="container">
       <h1>VÅRE VERDIER</h1>
       <div class="textbox">
         <p>Etikken er en ideelt drevet familiebutikk som fokuserer på miljøvennlige,
           menneskevennlige og dyrevennlige dagligvarer og gaver. Et lite supermarked for
           den etisk bevisste, og en himmel for sjokoladeelskere, te- og kaffeentusiaster.
-          Uner kan du lese mer om verdiene vi står for og hvorfor. Fairtrade, økologiske varer, dyrevelferd, emballasjefritt</p>
+          Etikkens fem kjerneprinsipper er <span class="principle">økologisk bærekraft</span>, <class="principle"span>rettferdig handel</span>,
+          <span>dyrevelferd</span>, <span>helse</span> og <span>tilgjengelighet</span>. Under kan du lese mer om verdiene vi står
+          for og hvorfor.</p>
       </div>
 
-      <div class="textbox" id="verdi1">
-        <h2>FAIRTRADE</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+      <div class="textbox small" id="verdi1">
+        <h2>ØKOLOGISK BÆREKRAFT</h2>
+        <p>Etikken foretrekker kortreist og økologisk mat. Vi gjør vårt beste for å
+          finne det mest bærekraftige alternativet tilgjengelig for alle produkttyper,
+          samtidig som vi prøver å holde bruken av emballasje på et minimum.</p>
+        </div>
 
       <figure>
-        <a href="#" onclick="return false;"><img src="img/mobile/jordbruk1.jpg" alt="fairtrade" class="imgSmall" id="bilde1" onclick="imgexpand(0)"></a>
+        <a href="#" onclick="return false;"><img src="img/mobile/krydderbutikk.jpg" alt="fairtrade" class="imgSmall" id="bilde1" onclick="imgexpand(0)"></a>
       </figure>
 
-      <div class="textbox" id="verdi2">
-        <h2>ØKOLOGISKE VARER</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+      <div class="textbox small" id="verdi2">
+        <h2>RETTFERDIG HANDEL</h2>
+        <p>Etikken skal tilby varer som kan vise til gode og rettferdige arbeidsvilkår
+          i alle ledd av produksjonen. Der vi har mulighet til det, handler vi direkte
+          med produsenten etter selv å ha besøkt arbeidsplassene.</p>
+        </div>
 
       <figure>
-        <a href="#" onclick="return false;"><img src="img/mobile/økologiskevarerbutikk.jpg" alt="økologiske varer" class="imgSmall" id="bilde2" onclick="imgexpand(1)"></a>
+        <a href="#" onclick="return false;"><img src="img/mobile/jordbruk1.jpg" alt="rettferdig handel" class="imgSmall" id="bilde2" onclick="imgexpand(1)"></a>
       </figure>
 
-      <div class="textbox" id="verdi3">
+      <div class="textbox small" id="verdi3">
         <h2>DYREVELFERD</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Etikken handler ikke med leverandører som utsetter dyr eller mennesker
+          for lidelse med viten og vilje. Hos oss finner du ingen varer som er
+          testet på dyr.</p>
       </div>
 
       <figure>
-        <a href="#" onclick="return false;"><img src="img/mobile/beans.jpg" alt="dyrevelferd" class="imgSmall" id="bilde3" onclick="imgexpand(2)"></a>
+        <a href="#" onclick="return false;"><img src="img/mobile/dyrevelferd.jpg" alt="dyrevelferd" class="imgSmall" id="bilde3" onclick="imgexpand(2)"></a>
       </figure>
 
-      <div class="textbox" id="verdi4">
-        <h2>EMBALLASJEFRITT</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="textbox small" id="verdi4">
+        <h2>HELSE</h2>
+        <p>Etikken ønsker å tilby varer som fremmer god helse, og foretrekker
+          derfor naturprodukter uten helse- og miljøskadelige stoffer så langt
+          vi får det til.</p>
       </div>
 
       <figure>
-        <a href="#" onclick="return false;"><img src="img/mobile/krydderbutikk.jpg" alt="emballasjefritt" class="imgSmall" id="bilde4" onclick="imgexpand(3)"></a>
+        <a href="#" onclick="return false;"><img src="img/mobile/såpe.jpg" alt="helse" class="imgSmall" id="bilde4" onclick="imgexpand(3)"></a>
       </figure>
 
+      <div class="textbox small" id="verdi5">
+        <h2>TILGJENGELIGHET</h2>
+        <p>Etikken mener at disse prinsippene er selvfølgelige, allmenne, etiske
+           krav og ikke noe en skal måtte betale ekstra for, med mindre det er
+           nødvendig for å ivareta anstendige arbeidsvilkår hos produsentene.
+           Etikken bestreber tilgjengelighet, respekt og åpenhet.</p>
+      </div>
+
+      <figure>
+        <a href="#" onclick="return false;"><img src="img/mobile/samfunn.jpg" alt="tilgjengelighet" class="imgSmall" id="bilde5" onclick="imgexpand(2)"></a>
+      </figure>
+
+      <div class="textbox" id="lesmer">
+        <h2>LES MER OM VERDIENE</h2>
+        <p>I linkene under kan du finne mer informasjon om økologisk produksjon og rettferdig handel
+          <br>
+          <br>
+          <span class="head">Generelt om etisk og miljøvennlig forbruk i hverdagen</span>
+          <br>
+          Grønn Hverdag: <a target="_blank" href="http://www.gronnhverdag.no/">http://www.gronnhverdag.no/</a>
+          <br>
+          <br>
+          <span class="head">Økologi</span>
+          <br>
+          Debio og ø-merket: <a target="_blank" href="http://debio.no">http://debio.no</a>
+          <br>
+          Matportalen : <a target="_blank" href="http://matportalen.no/Emner/okologi">http://matportalen.no/Emner/okologi</a>
+          <br>
+          Oikos - Økologisk Norge : <a target="_blank" href="http://www.oikos.no">http://www.oikos.no</a>
+          <br>
+          <br>
+          <span class="head">Rettferdig handel</span>
+          <br>
+          Fairtrade Max Havelaar Norge: <a target="_blank" href="http://www.maxhavelaar.no/">http://www.maxhavelaar.no/</a>
+          <br>
+          Fairtrade Labeling Organizations (FLO): <a target="_blank" href="http://www.fairtrade.net/">http://www.fairtrade.net/</a>
+          <br>
+          World Fair Trade Organizaton (WFTO): <a target="_blank" href="http://www.wfto.com/">http://www.wfto.com/</a> </p>
+      </div>
     </div>
     <div id="commonFooter"></div>
-    <div class="imgexpand" id="imgexpand">
-      <div id="expandBox">
-        <a id="crossIcon" class="expandIcon" href="javascript:void(0);" onclick="imageclose()"><img src="img/icon/cross.svg" alt="icon"></a>
-        <a id="leftIcon" class="expandIcon" href="javascript:void(0);" onclick="imageNext(-1)"><i class="arrow left"></i></a>
-        <a id="rightIcon" class="expandIcon" href="javascript:void(0);" onclick="imageNext(1)"><i class="arrow right"></i></a>
-        <img src="img/originals/jordbruk1.jpg" alt="emballasjefritt" class="original" id="original1">
-        <img src="img/originals/økologiskevarerbutikk.jpg" alt="emballasjefritt" class="original" id="original2">
-        <img src="img/originals/beans.jpg" alt="emballasjefritt" class="original" id="original3">
-        <img src="img/originals/krydderbutikk.jpg" alt="emballasjefritt" class="original" id="original4">
-      </div>
-
+    <div class="imgexpand" id="imgexpand" onclick="imageclose()">
+      <img src="img/originals/jordbruk1.jpg" alt="emballasjefritt" class="original" id="original1">
+      <img src="img/originals/økologiskevarerbutikk.jpg" alt="emballasjefritt" class="original" id="original2">
+      <img src="img/originals/beans.jpg" alt="emballasjefritt" class="original" id="original3">
+      <img src="img/originals/krydderbutikk.jpg" alt="emballasjefritt" class="original" id="original4">
 
     </div>
     <script src="scripts/commonMenu.js"></script>
