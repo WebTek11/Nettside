@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/common.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/values.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/products.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/underpage.css">
     <title>Produkter</title>
     <link rel="icon" href="img/icon/etikken.png" type="image/png">
   </head>
-  <body>
+  <body onresize="setNavBarResize()">
     <div class="navbar" id="nav"></div>
     <img src="img/desktop/produkter.jpg" alt="background image" class="backImg" id="backImg">
     <div class="container">
@@ -24,7 +25,11 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
 
-      <div class="textbox" id="verdi1">
+      <figure>
+        <a href="#" onclick="return false;"><img src="img/mobile/mel.jpg" alt="mel" class="imgSmall" id="bilde1" onclick="imgexpand(0)"></a>
+      </figure>
+
+      <div class="textbox" id="verdi2">
         <h2>ALT I LØSVEKT</h2>
         <p>Visste du at du får 5% rabatt på alt av varer i løsvekt hvis du tar med egen beholder?</p>
         <p>Dette gjelder alt av tørrvarer (ikke såpe). Av tørrvarer har vi mange
@@ -33,8 +38,12 @@
         frukt og bær, te og kaffe.</p>
       </div>
 
+      <figure>
+        <a href="#" onclick="return false;"><img src="img/mobile/løsvekt-seksjon_1.jpg" alt="løsvektseksjonen vår" class="imgSmall" id="bilde2" onclick="imgexpand(1)"></a>
+      </figure>
+
       <div class="textbox" id="verdi3">
-        <h2>GRØNNSAKSDYRKING</h2>
+        <h2>FRØ OG SPIRER</h2>
         <p>Feila du med grønnsaksdyrkinga i sommer? Fortvil ikke! Spirer kan
         såes året rundt, uavhengig av vær og er enkelt å få til. Nå har vi
         ruccolafrø, alfalfafrø, brokkolifrø, en blanding med alfalfa og karse og
@@ -43,8 +52,23 @@
         <p>Bruk spirene for eksempel på pizzaen, i salaten, suppen eller topping på brødskiva.</p>
       </div>
 
+      <figure>
+        <a href="#" onclick="return false;"><img src="img/mobile/frø.jpg" alt="frø" class="imgSmall" id="bilde3" onclick="imgexpand(2)"></a>
+      </figure>
+
     </div>
     <div id="commonFooter"></div>
+    <div class="imgexpand" id="imgexpand">
+      <div id="expandBox">
+        <a id="crossIcon" class="expandIcon" href="javascript:void(0);" onclick="imageclose()"><img src="img/icon/cross.svg" alt="icon"></a>
+        <a id="leftIcon" class="expandIcon" href="javascript:void(0);" onclick="imageNext(-1)"><i class="arrow left"></i></a>
+        <a id="rightIcon" class="expandIcon" href="javascript:void(0);" onclick="imageNext(1)"><i class="arrow right"></i></a>
+        <img data-src="img/originals/mel.jpg" alt="mel" class="original" id="original1">
+        <img data-src="img/originals/løsvekt-seksjon_1.jpg" alt="løsvektseksjonen" class="original" id="original2">
+        <img data-src="img/originals/frø.jpg" alt="frø" class="original" id="original3">
+      </div>
+
     <script src="scripts/commonMenu.js"></script>
+    <script src="scripts/imageexpander.js"></script>
   </body>
 </html>
