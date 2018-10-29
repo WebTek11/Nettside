@@ -17,7 +17,7 @@ footer_to_insert.innerHTML = `
 
   <div class="footerColumn">
     <p class="footerHeading">Åpningstider</p>
-    <p class="footerText">10:00-18:00<br>Mandag-lørdag</p>
+    <p class="footerText">10:00-18:00<br>Mandag-Lørdag</p>
   </div>
 
   <div class="footerColumn">
@@ -67,13 +67,14 @@ menu_to_insert.innerHTML = `
 
 menu_container = document.getElementById("nav");
 menu_container.appendChild(menu_to_insert);
-
+var ypos = window.pageYOffset;
 // Responsive navbar
 function responsiveNav() {
   // Opens and closes the menu
   let i = document.getElementById("nav")
   if (i.className === "navbar") {
     i.className += "_responsive";
+    ypos = window.pageYOffset;
   }
   else {
     i.className = "navbar"
@@ -119,5 +120,38 @@ function responsiveNav() {
   }
   else {
     y.style.display = "none";
+  }
+
+  let navColor = document.getElementsByClassName("links")
+  if (i.className === "navbar_responsive") {
+    for (var p = 0; p < navColor.length; p++) {
+      navColor[p].style.color = "white";
+      navColor[p].style.textShadow = "1px 1px 3px #6f6f6f";
+    }
+    document.getElementById("logoSmall").style.backgroundColor = "#CFDB42";
+  }
+  window.scrollTo(0,ypos);
+}
+
+
+/* Makes navbar work with resizing of screen. Changing orientation on iPad for example*/
+var win = window.innerWidth;
+
+function setNavBarResize() {
+  let s = document.getElementById("nav")
+  if (window.innerWidth <= 960) {
+    if (win > 960) {
+      s.className = "navbar_responsive";
+      responsiveNav();
+      wind = window.innerWidth;
+      document.getElementById("logoSmall").style.display = "none";
+    }
+  }
+  else {
+    s.className = "navbar_responsive";
+    responsiveNav();
+    s.className = "navbar";
+    document.getElementById("logoSmall").style.display = "block";
+    win = window.innerWidth;
   }
 }

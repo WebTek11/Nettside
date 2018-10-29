@@ -1,10 +1,12 @@
 navbarChange()
+var wind = window.innerWidth;
 setBoxHeight()
 controlFunc()
 
 document.onscroll = controlFunc;
 
 function controlFunc() {
+  wind = window.innerWidth;
   if (window.innerWidth > 960){
     navbarChange()
     imageParallax()}
@@ -14,8 +16,14 @@ function controlFunc() {
   }
 }
 
+function controlFuncTwo() {
+  if (window.innerWidth <= 960){
+  document.getElementById('centerLogo').style.top = '0';
+  document.getElementById('imageBox').style.top = '-83px';
+  }
+}
+
 function imageParallax() {
-  if (window.innerWidth > 960){
     var scrollTop = window.pageYOffset;
     if (scrollTop < window.innerHeight) {
     var t = scrollTop * (0.4) - 83;
@@ -24,17 +32,13 @@ function imageParallax() {
     var logoPos = -wh - t - 83;
     document.getElementById('centerLogo').style.top = logoPos+'px';
     }
-  }
-  else {
-    document.getElementById('centerLogo').style.top = '0';
-  }
 }
 
 function setBoxHeight() {
-  if (window.innerWidth > 960){
+  if (window.innerWidth > 960 && wind > 960){
     var wh = window.innerHeight - 83;
     var boxes = document.getElementsByClassName('boxContainer');
-    var images = document.getElementsByClassName('imgSmall')
+    var images = document.getElementsByClassName('imgSmall');
     if (wh <= 460){
       for (var i = 0; i < boxes.length; i++) {
         boxes[i].style.height = '460px';
@@ -48,9 +52,12 @@ function setBoxHeight() {
         boxes[i].style.height = wh+'px';
       }
       for (var i = 0; i < images.length; i++) {
-        images[i].style.height = '65vh';
+        images[i].style.height = '80%';
       }
     }
+  }
+  else {
+    wind = window.innerWidth;
   }
 }
 
