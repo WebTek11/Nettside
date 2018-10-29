@@ -34,7 +34,7 @@ footer_to_insert.innerHTML = `
       <img src="img/icon/facebook.svg" alt="facebook" height="40"></a>
 
       <a href="https://www.instagram.com/etikken/">
-      <img src="img/icon/instagram.png" alt="instagram" height="40"></a>
+      <img src="img/icon/instagram_color.svg" alt="instagram" height="40"></a>
     </div>
 </div>
 `;
