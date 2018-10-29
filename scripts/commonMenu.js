@@ -74,10 +74,9 @@ function responsiveNav() {
   let i = document.getElementById("nav")
   if (i.className === "navbar") {
     i.className += "_responsive";
-    ypos = window.pageYOffset;
   }
   else {
-    i.className = "navbar"
+    i.className = "navbar";
   }
 
   // Hides the footer when the menu is open
@@ -114,6 +113,7 @@ function responsiveNav() {
   else {
     z.style.height = "auto";
   }
+
   let y = document.getElementById("logoSmall")
   if (i.className === "navbar_responsive") {
     y.style.display = "block";
@@ -121,7 +121,7 @@ function responsiveNav() {
   else {
     y.style.display = "none";
   }
-
+  /* Fixes mixcolored navbarlinks*/
   let navColor = document.getElementsByClassName("links")
   if (i.className === "navbar_responsive") {
     for (var p = 0; p < navColor.length; p++) {
@@ -130,9 +130,7 @@ function responsiveNav() {
     }
     document.getElementById("logoSmall").style.backgroundColor = "#CFDB42";
   }
-  window.scrollTo(0,ypos);
 }
-
 
 /* Makes navbar work with resizing of screen. Changing orientation on iPad for example*/
 var win = window.innerWidth;
@@ -143,7 +141,7 @@ function setNavBarResize() {
     if (win > 960) {
       s.className = "navbar_responsive";
       responsiveNav();
-      wind = window.innerWidth;
+      win = window.innerWidth;
       document.getElementById("logoSmall").style.display = "none";
     }
   }
