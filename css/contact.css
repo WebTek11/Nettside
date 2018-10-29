@@ -19,16 +19,6 @@ max-height: 100%;
   }
 }
 
-/* Temp. CSS for contact.html, merge with common.css? */
-#contactText a {
-  text-decoration: none;
-  color: #CFDB42;
-}
-
-#contactText p a:hover {
-  color: rgb(76,142,57);
-}
-
 #contactText p {
   text-align: center;
 }

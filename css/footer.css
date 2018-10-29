@@ -54,6 +54,10 @@ body {
   text-decoration: none;
 }
 
+.footerText a:hover {
+  color: #CFDB42;
+}
+
 .socialIcons {
   text-align: center;
   margin-top: 10px;
@@ -62,10 +66,6 @@ body {
 #footerIconCenter {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-a:hover {
-  color: #CFDB42 !important;
 }
 
 /* This changes the footer into a single column when needed */
