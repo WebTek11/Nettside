@@ -1,29 +1,26 @@
-#verdi1,#verdi3 {
-  width: 50%;
+/*Farge på viktige ord i introduksjon, blikkfang*/
+span {
+  color: rgb(76,142,57);
 }
 
-#bilde1,#bilde3 {
-    width: 365px;
+/*Plassering av tekstbokser og bilder*/
+.small{
+  width: 50%;
+  transform: translateY(-0%) translateX(0%);
+}
+
+.imgSmall {
+    width: 350px;
     height: auto;
     position: absolute;
     z-index: +5;
-    transform: translateY(-150%) translateX(108.5%);
+    transform: translateY(-90%) translateX(116.5%);
 }
 
-#verdi2,#verdi4 {
-  width: 50%;
-  position: relative;
-  left: 400px;
+/*Style for siste infoboks med linker*/
+.head {
+  font-weight: bold;
 }
-
-#bilde2,#bilde4 {
-    width: 425px;
-    height: auto;
-    position: absolute;
-    z-index: +5;
-    transform: translateY(-130%) translateX(-10%);
-}
-
 /*Du er inne på siden*/
 #valuesNav .underline{
   width: calc(100% - 40px) !important;
@@ -84,20 +81,12 @@
 
 .expandIcon:hover {
   background-color: black;
-  box-shadow: 0px 0px 20px white;
+  box-shadow: 0px 0px 10px white;
 }
 
 .expandIcon:active {
   background-color: white;
-  box-shadow: 0px 0px 20px black;
-}
-
-.expandIcon:active i {
-  border: solid black;
-  border-width: 0 6px 6px 0;
-  display: inline-block;
-  padding: 7px;
-  position: relative;
+  box-shadow: 0px 0px 0px black;
   top: 5px;
 }
 
