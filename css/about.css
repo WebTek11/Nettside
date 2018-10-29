@@ -1,4 +1,4 @@
-/*Viser at man er inne på siden*/
+/* Viser i menyen at man er inne på "Om oss"-siden */
 #aboutNav .underline{
   width: calc(100% - 40px) !important;
 }
