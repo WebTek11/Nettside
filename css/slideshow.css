@@ -1,17 +1,6 @@
+/* Som standard gjemmes bildene */
 * {box-sizing:border-box}
 
-/* Slideshow container */
-/*.slideshow-container {
-  max-width: 1000px;
-  width: 70%;
-  height: auto;
-  align: right;
-  position: absolute;
-  transform: translateY(-100%) translateX(50%);
-  margin: auto;
-}*/
-
-/* Hide the images by default */
 .mySlides {
     display: none;
     height: 100%;
@@ -19,16 +8,16 @@
 
 .imgSlides {
   height: 100%;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
-/* Fading animation */
+/* Fadinganimasjon */
 .fade {
-  -webkit-animation-name: fade;
   -webkit-animation-duration: 1.0s;
-  animation-name: fade;
+  -webkit-animation-name: fade;
   animation-duration: 1.0s;
+  animation-name: fade;
 }
 
 @-webkit-keyframes fade {
