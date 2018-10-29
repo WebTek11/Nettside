@@ -65,7 +65,7 @@ body {
 }
 
 a:hover {
-  color: #CFDB42;
+  color: #CFDB42 !important;
 }
 
 /* This changes the footer into a single column when needed */

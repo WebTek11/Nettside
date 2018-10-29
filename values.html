@@ -10,7 +10,7 @@
     <title>Verdier</title>
     <link rel="icon" href="img/icon/etikken.png" type="image/png">
   </head>
-  <body>
+  <body onresize="setNavBarResize()">
     <div class="navbar" id="nav"></div>
     <img src="img/desktop/beans.jpg" alt="background image" class="backImg" id="backImg">
     <div class="container">
@@ -60,11 +60,17 @@
 
     </div>
     <div id="commonFooter"></div>
-    <div class="imgexpand" id="imgexpand" onclick="imageclose()">
-      <img src="img/originals/jordbruk1.jpg" alt="emballasjefritt" class="original" id="original1">
-      <img src="img/originals/økologiskevarerbutikk.jpg" alt="emballasjefritt" class="original" id="original2">
-      <img src="img/originals/beans.jpg" alt="emballasjefritt" class="original" id="original3">
-      <img src="img/originals/krydderbutikk.jpg" alt="emballasjefritt" class="original" id="original4">
+    <div class="imgexpand" id="imgexpand">
+      <div id="expandBox">
+        <a id="crossIcon" class="expandIcon" href="javascript:void(0);" onclick="imageclose()"><img src="img/icon/cross.svg" alt="icon"></a>
+        <a id="leftIcon" class="expandIcon" href="javascript:void(0);" onclick="imageNext(-1)"><i class="arrow left"></i></a>
+        <a id="rightIcon" class="expandIcon" href="javascript:void(0);" onclick="imageNext(1)"><i class="arrow right"></i></a>
+        <img src="img/originals/jordbruk1.jpg" alt="emballasjefritt" class="original" id="original1">
+        <img src="img/originals/økologiskevarerbutikk.jpg" alt="emballasjefritt" class="original" id="original2">
+        <img src="img/originals/beans.jpg" alt="emballasjefritt" class="original" id="original3">
+        <img src="img/originals/krydderbutikk.jpg" alt="emballasjefritt" class="original" id="original4">
+      </div>
+
 
     </div>
     <script src="scripts/commonMenu.js"></script>

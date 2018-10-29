@@ -21,6 +21,11 @@
   }
 }
 
+.links {
+  color: #CFDB42 !important;
+  text-shadow: none !important;
+}
+
 h1 {
   font-size: 3em;
   color: white;
@@ -61,5 +66,9 @@ h2 {
     width: 100% !important;
     object-fit: cover;
     position: relative !important;
+  }
+  .links {
+    color: white !important;
+    text-shadow: 1px 1px 3px #6f6f6f !important;
   }
 }
