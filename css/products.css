@@ -1,4 +1,4 @@
-/*Viser at man er inne på siden*/
+/* Viser at man er inne på siden */
 #productsNav .underline{
   width: calc(100% - 40px) !important;
 }
@@ -11,4 +11,8 @@
   #productsNav a {
     color: #CFDB42 !important;
   }
+}
+
+#title, #info {
+  text-align: center;
 }
