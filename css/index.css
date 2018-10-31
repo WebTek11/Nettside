@@ -122,15 +122,6 @@ span {
 }
 
 /*Se mer-boks*/
-a {
-  text-decoration: none;
-  color: #CFDB42;
-}
-
-/*Les mer... skifter farge ved hover.*/
-p a:hover {
-  color: rgb(76,142,57) !important;
-}
 
 .moreBox:hover {
   color: white;
