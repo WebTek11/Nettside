@@ -3,12 +3,30 @@ html {
   /* -webkit-font-smoothing: antialiased; */
 }
 
+h2 {
+  text-align: center;
+  color: #CFDB42;
+  font-size: 2.5em;
+  font-weight: lighter;
+  margin: 0px 0px 20px 0px;
+  overflow-wrap: break-word;
+}
+
+h3 {
+  color: #4c8e39;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0px;
+  overflow-wrap: break-word;
+}
+
 p {
   margin-top: 0px;
   margin-bottom: 0px;
   color: #424242;
   line-height: 1.3;
   font-size: 1.2em;
+  overflow-wrap: break-word;
 }
 
 body {
@@ -26,6 +44,10 @@ a {
 
 p a:hover {
   color: rgb(76,142,57);
+}
+
+em {
+  color: #4c8e39;
 }
 
 /*Navbar*/
@@ -136,15 +158,6 @@ li:hover .underline{
 /* Responsive navbar */
 .navbar .navIcon {
   display: none;
-}
-
-h2 {
-  text-align: center;
-  color: #CFDB42;
-  font-size: 2.5em;
-  font-weight: lighter;
-  margin: 0px 0px 20px 0px;
-  overflow-wrap: break-word;
 }
 
 @media screen and (max-width: 960px) {
