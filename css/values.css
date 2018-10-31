@@ -1,8 +1,3 @@
-/*Farge på viktige ord i introduksjon, blikkfang*/
-span {
-  color: rgb(76,142,57);
-}
-
 /*Plassering av tekstbokser og bilder*/
 .small{
   width: 50%;
@@ -17,10 +12,6 @@ span {
   transform: translateY(-90%) translateX(116.5%);
 }
 
-/*Style for siste infoboks med linker*/
-.head {
-  font-weight: bold;
-}
 /*Du er inne på siden*/
 #valuesNav .underline{
   width: calc(100% - 40px) !important;
