@@ -101,7 +101,6 @@ span {
 }
 
 .boxContainer:nth-child(odd) .boxFront h2{
-  margin: 0px;
 }
 
 .boxContainer:nth-child(odd) .boxFront{
@@ -114,17 +113,12 @@ span {
 /*Overskrifter tekstbokser*/
 .boxFront h2{
   /*position: relative;*/
-  margin-bottom: 5px;
-  margin-top: 0px;
   top: 28px;
   z-index: 6;
-
-  text-align: left;
-  padding-left: 0px;
   color: #CFDB42;
-  font-size: 45px;
-  font-weight: bold;
   /*text-shadow: 1.5px 1.5px 2px #a2a2a2;*/
+  margin-bottom: 5px;
+  text-align: left;
 }
 
 /*Se mer-boks*/
@@ -135,7 +129,7 @@ a {
 
 /*Les mer... skifter farge ved hover.*/
 p a:hover {
-  color: rgb(76,142,57);
+  color: rgb(76,142,57) !important;
 }
 
 .moreBox:hover {
