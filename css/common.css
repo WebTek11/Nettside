@@ -44,6 +44,10 @@ p a:hover {
   color: rgb(76,142,57);
 }
 
+em {
+  color: #4c8e39;
+}
+
 /*Navbar*/
 .navbar {
   background-color: rgba(255,255,255,1);
