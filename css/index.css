@@ -15,7 +15,6 @@
   z-index: -1;
 }
 
-/* Big logo*/
 #centerLogo {
   height: 100vh;
   margin: auto;
@@ -23,7 +22,6 @@
   position: relative;
   top: -100vh;
 }
-
 #logoBig {
   height: 102.2%;
   position: absolute;
@@ -32,7 +30,7 @@
   width: 102.2%;
 }
 
-#logo {
+.logo {
   background-color: #CFDB42;
   border-radius: 50%;
   display: block;
@@ -54,12 +52,20 @@
   padding-bottom: 10px;
   padding-top: 10px;
   position: relative;
-  top: 100px;
+}
+
+/* Tekstbokser */
+.boxBorder {
+  background-color: white;
+  box-shadow: 1px 1px 2px #a2a2a2;
+  padding: 10px 25px 25px 25px;
+  width: 400px;
+  z-index: 5;
 }
 
 /* Seksjonsdeler/bakgrunnskifte */
 .boxContainer {
-  height: 100vh; /* Endres ved js*/
+  /* Javascript function for 100vh-navbar height */
   padding-bottom: 20px;
   padding-top: 30px;
   position: relative;
@@ -74,16 +80,7 @@
 }
 
 span {
-  letter-spacing: -5px;
-}
-
-/* Tekstbokser */
-.boxBorder {
-  background-color: white;
-  box-shadow: 1px 1px 2px #a2a2a2;
-  padding: 10px 25px 25px 25px;
-  width: 400px;
-  z-index: 5;
+  letter-spacing: -6px;
 }
 
 /* Tekstbokser partall */
@@ -92,31 +89,60 @@ span {
   position: relative;
 }
 
+.boxContainer:nth-child(even) .boxFront h2{
+}
+
 /* Tekstbokser oddetall */
 .boxContainer:nth-child(odd) .boxFront .boxBorder{
   background-color: #F6F7EF;
   position: relative;
 }
 
+.boxContainer:nth-child(odd) .boxFront h2{
+}
 
+.boxContainer:nth-child(odd) .boxFront{
+}
+
+.boxContainer:nth-child(even) .boxFront{
+  top: 100px;
+}
 
 /* Overskrifter tekstbokser */
 .boxFront h2{
   color: #CFDB42;
-  top: 28px;
-  z-index: 6;
   margin-bottom: 5px;
   text-align: left;
   top: 28px;
   z-index: 6;
 }
 
-/*Les mer, skifter farge ved hover.*/
+/* Se mer-boks */
+a {
+  color: #CFDB42;
+  text-decoration: none;
+}
+
+/*Les mer... skifter farge ved hover.*/
 p a:hover {
   color: rgb(76,142,57) !important;
 }
 
-/* Small images*/
+.moreBox:hover {
+  background-color: green;
+  color: white;
+}
+
+#backImg {
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.6;
+  position:fixed;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
 .imgSmall {
   border-radius: 0%;
   height: 100%;
@@ -125,16 +151,18 @@ p a:hover {
   overflow: hidden;
   position: absolute;
   width: 500px;
-  top: calc(10% - 100px);
 }
 
 .boxContainer:nth-child(even) .imgSmall{
   left: 50px;
+  top: calc(10% - 100px);
 }
 
 .boxContainer:nth-child(odd) .imgSmall{
   right: 50px;
+  top: 10%;
 }
+/* Bokser slutt */
 
 @media screen and (max-width: 960px) {
   .frontImg {
@@ -163,6 +191,11 @@ p a:hover {
 
   .imgSmall {
     display: none;
+    height: 80px;
+    top: 0 !important;
+    opacity: 0.2;
+    right: 0 !important;
+    width: 100%;
   }
 
   .boxContainer {
@@ -183,6 +216,9 @@ p a:hover {
     top: 0;
     width: 100%;
   }
+  .imageBox {
+    top: 25vh;
+  }
 
   .boxContainer:nth-child(even) .boxFront .boxBorder {
     left: 0;
@@ -192,10 +228,39 @@ p a:hover {
     left: 0;
   }
 
-  #logo {
+  .boxContainer:nth-child(even) .imgSmall {
+    left: 0;
+  }
+
+  .logo {
     height: 70vw;
     max-height: 70vh;
-    width: 70vw;
     max-width: 70vh;
+    width: 70vW;
   }
+}
+
+/* Slideshow: som standard gjemmes bildene */
+* {box-sizing:border-box}
+
+.mySlides {
+  display: none;
+  height: 100%;
+}
+
+.imgSlides {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Slideshow: fadinganimasjon */
+.fade {
+  animation-duration: 1.0s;
+  animation-name: fade;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
 }
