@@ -1,27 +1,27 @@
-/*Farge på viktige ord i introduksjon, blikkfang*/
+/* Farge på viktige ord i introduksjon for blikkfang */
 span {
   color: rgb(76,142,57);
 }
 
-/*Plassering av tekstbokser og bilder*/
+/* Plassering av tekstbokser og bilder */
 .small{
-  width: 50%;
   transform: translateY(-0%) translateX(0%);
+  width: 50%;
 }
 
 .imgSmall {
-    width: 350px;
     height: auto;
     position: absolute;
-    z-index: +5;
     transform: translateY(-90%) translateX(116.5%);
+    width: 350px;
+    z-index: +5;
 }
 
-/*Style for siste infoboks med linker*/
+/* Style for siste infoboks med linker */
 .head {
   font-weight: bold;
 }
-/*Du er inne på siden*/
+/* Viser i menyen at man er inne på "produkt"-siden */
 #productsNav .underline{
   width: calc(100% - 40px) !important;
 }
@@ -35,7 +35,7 @@ span {
     color: #CFDB42 !important;
   }
   figure {
-    position: relative;
     margin: 0;
+    position: relative;
   }
 }

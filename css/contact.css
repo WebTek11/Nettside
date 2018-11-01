@@ -1,14 +1,14 @@
 #googlemaps {
 border: 0;
-max-width: 100%;
 max-height: 100%;
+max-width: 100%;
 }
 
 #contactText p {
   text-align: center;
 }
 
-/*Du er inne på siden*/
+/* Viser i menyen at man er inne på "Om oss"-siden */
 #contactNav .underline{
   width: calc(100% - 40px) !important;
 }

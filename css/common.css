@@ -1,64 +1,62 @@
 html {
   height: 100%;
-  /* -webkit-font-smoothing: antialiased; */
 }
 
 p {
-  margin-top: 0px;
-  margin-bottom: 0px;
   color: #424242;
-  line-height: 1.3;
   font-size: 1.2em;
+  line-height: 1.3;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 body {
-  position: relative;
-  min-height: 100%;
-  width: 100%;
-  margin: auto;
   font-family: helvetica, arial, sans-serif;
+  margin: auto;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
 }
 
 a {
-  text-decoration: none;
   color: #CFDB42;
+  text-decoration: none;
 }
 
 p a:hover {
-  color: rgb(76,142,57);
+  color: rgb(76, 142, 57);
 }
 
-/*Navbar*/
+/* Navbar */
 .navbar {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 2px grey;
   position: sticky;
   top: 0px;
-  box-shadow: 0px 2px 2px grey;
   z-index: 10;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto 0 auto;
-
+  list-style-type: none;
+  margin: 0 auto 0 auto;
+  padding: 0;
 }
 
 li {
-    float: left;
-    position: relative;
-    left: 120px;
+  float: left;
+  left: 120px;
+  position: relative;
 }
 
 li a {
-    display: block;
-    color: #CFDB42;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    transition: color 0.2s ease;
-    padding: 30px 20px 25px 20px;
+  color: #CFDB42;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px 20px 25px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 
@@ -71,46 +69,44 @@ li:hover a{
   text-shadow: none;
 }
 
-/*Underline og fargeendring ved hover*/
+/* Underline og fargeendring ved hover */
 li:hover .underline{
   width: calc(100% - 40px);
 }
 
 .underline {
-  margin: auto;
-  height: 5px;
-  width: 0px;
   background-color: rgb(76,142,57);
-  position: relative;
-  bottom: 20px;
   border-radius: 2px;
-  transition: width 0.3s;
-  /* -webkit-transition: width 0.3s ease; */
+  bottom: 20px;
+  height: 5px;
+  margin: auto;
   padding: 0;
+  position: relative;
+  transition: width 0.3s;
+  width: 0px;
 }
 
 .mainBar {
-  width: 100%;
   overflow: hidden;
+  width: 100%;
 }
 
 .navbarInside {
-  max-width: 960px;
-  margin: auto;
   border-left: 2px white;
+  margin: auto;
+  max-width: 960px;
 }
 
-/*Navelementer*/
-
+/* Navelementer */
 #logoSmall {
-  height: 60px;
-  width: 60px;
-  position: absolute;
-  margin: 10px 0px 0px 50px;
   background-color: #CFDB42;
-  border-radius: 50%;
   border: 1px solid white;
+  border-radius: 50%;
+  height: 60px;
+  margin: 10px 0px 0px 50px;
+  position: absolute;
   transition: background-color 0.2s ease;
+  width: 60px;
 }
 
 #aboutNav {
@@ -139,12 +135,12 @@ li:hover .underline{
 }
 
 h2 {
-  text-align: center;
   color: #CFDB42;
   font-size: 2.5em;
   font-weight: lighter;
   margin: 0px 0px 20px 0px;
   overflow-wrap: break-word;
+  text-align: center;
 }
 
 @media screen and (max-width: 960px) {
@@ -154,14 +150,14 @@ h2 {
   }
 
   .navbar {
-    position: relative;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
     box-shadow: none;
+    position: relative;
   }
 
   .container {
-    width: auto !important;
     padding: 10px !important;
+    width: auto !important;
   }
 
   #nav {
@@ -176,35 +172,35 @@ h2 {
   .navbar_responsive {
     display: block;
     float: none;
+    font-size: 30px;
+    left: 0px;
     margin-left: auto;
     margin-right: auto;
-    left: 0px;
     top: 100px;
-    font-size: 30px;
   }
 
   .navbar_responsive .mainBar * {
+    color: white;
     display: block;
     float: none;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 30px;
     left: 0px;
-    color: white;
+    margin-left: auto;
+    margin-right: auto;
     text-shadow: 1px 1px 3px #6f6f6f;
   }
 
   .navIcon {
-    position: fixed;
-    top: 15px;
-    right: 15px;
     background-color: white;
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    padding: 7px;
     box-sizing: content-box;
     box-shadow: 0px 0px 7px grey;
+    height: 30px;
+    padding: 7px;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    width: 30px;
   }
 
   .navIcon img {
@@ -228,9 +224,8 @@ h2 {
     display: none !important;
   }
   .navbar_responsive #logoSmall {
-    position: absolute;
     margin: 15px 0 0 50%;
+    position: absolute;
     transform: translate(-50%, 0%);
   }
 }
-/*Navbar slutt*/
