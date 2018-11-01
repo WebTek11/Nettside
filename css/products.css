@@ -12,10 +12,7 @@
     z-index: +5;
 }
 
-/* Style for siste infoboks med linker */
-.head {
-  font-weight: bold;
-}
+
 /* Viser i menyen at man er inne på "produkt"-siden */
 #productsNav .underline{
   width: calc(100% - 40px) !important;
