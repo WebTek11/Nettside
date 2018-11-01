@@ -240,7 +240,7 @@ p a:hover {
   }
 }
 
-/* Slideshow: som standard gjemmes bildene */
+/* Skjuler bilder i slideshowet */
 * {box-sizing:border-box}
 
 .mySlides {
@@ -254,7 +254,7 @@ p a:hover {
   width: 100%;
 }
 
-/* Slideshow: fadinganimasjon */
+/* Fadinganimasjon for slideshow */
 .fade {
   animation-duration: 1.0s;
   animation-name: fade;
