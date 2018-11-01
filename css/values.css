@@ -12,6 +12,11 @@
   z-index: +5;
 }
 
+/* Style for siste infoboks med linker */
+.head {
+  font-weight: bold;
+}
+
 /* Vise i menyen at du er inne på "Verdier"-siden */
 #valuesNav .underline{
   width: calc(100% - 40px) !important;
@@ -25,7 +30,7 @@
   #valuesNav a {
     color: #CFDB42 !important;
   }
-  figure {
+  .figure {
     margin: 0;
     position: relative;
   }
