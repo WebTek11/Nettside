@@ -31,7 +31,7 @@ span {
   #valuesNav a {
     color: #CFDB42 !important;
   }
-  figure {
+  .figure {
     margin: 0;
     position: relative;
   }
