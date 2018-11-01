@@ -1,3 +1,8 @@
+/* Farge på viktige ord i introduksjon for blikkfang */
+span {
+  color: rgb(76,142,57);
+}
+
 /* Plassering av tekstbokser og bilder */
 .small{
   transform: translateY(-0%) translateX(0%);
@@ -16,7 +21,8 @@
 .head {
   font-weight: bold;
 }
-/* Viser i menyen at man er inne på "produkt"-siden */
+
+/* Viser i menyen at man er inne på "Produkt"-siden */
 #productsNav .underline{
   width: calc(100% - 40px) !important;
 }

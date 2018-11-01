@@ -4,9 +4,9 @@ body {
 }
 
 .footerBox {
-  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 960px;
   overflow: hidden; /* Fjerner en hvit linje under footeren */
 }
 
@@ -24,14 +24,14 @@ body {
 
 /* Styler footeren */
 #commonFooter {
-    background-color: white;
-    bottom: -200px;
-    box-sizing: content-box;
-    height: 170px;
-    padding-top: 30px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
+  background-color: white;
+  bottom: -200px;
+  box-sizing: content-box;
+  height: 170px;
+  padding-top: 30px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 #commonFooter p {

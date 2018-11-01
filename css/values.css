@@ -1,3 +1,9 @@
+
+/* Farge på viktige ord i introduksjon for blikkfang */
+span {
+  color: rgb(76,142,57);
+}
+
 /* Plassering av tekstbokser og bilder */
 .small{
   transform: translateY(-0%) translateX(0%);
