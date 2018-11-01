@@ -57,7 +57,17 @@ menu_to_insert.innerHTML = `
   <a id="cross" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/cross.svg" alt="icon"></a>
   <ul class="mainBar">
     <li id="aboutNav"><a class="links" href="about.html">OM OSS</a> <a href="about.html" class="underline"></a></li>
-    <li id="valuesNav"><a class="links" href="values.html">VÅRE VERDIER</a> <a href="values.html" class="underline"></a></li>
+    <ul class="dropdown">
+      <li id="valuesNav"><a class="links dropbtn" href="values.html">VÅRE VERDIER</a> <a href="values.html" class="underline"></a>
+          <div class="dropdown-content">
+            <a href="values.html#link_verdi1" class="drop-links">Bærekraft</a>
+            <a href="values.html#link_verdi2" class="drop-links">Rettferdighet</a>
+            <a href="values.html#link_verdi3" class="drop-links">Dyrevelferd</a>
+            <a href="values.html#link_verdi4" class="drop-links">Helse</a>
+            <a href="values.html#link_verdi5" class="drop-links">Tilgjengelighet</a>
+          </div>
+      </li>
+    </ul>
     <li id="productsNav"><a class="links" href="products.html">PRODUKTER</a> <a href="products.html" class="underline"></a></li>
     <li id="webpageNav"><a class="links" target="_blank" href="http://www.etikken.no">NETTBUTIKK</a> <a href="http://www.etikken.no" class="underline"></a></li>
     <li id="contactNav"><a class="links" href="contact.html">KONTAKT</a> <a href="contact.html" class="underline"></a></li>
