@@ -76,12 +76,11 @@ function navbarChange() {
 
       /* Change the styling of the navbar and make it go from transparent to white.*/
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,'+a+')';
-      
+      document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,'+a+')';
       document.getElementById('nav').style.boxShadow = 'none';
-      document.getElementById('nav').style.boxShadow = '0px 1px 10px white';
+      document.getElementById('nav').style.boxShadow = '0 1px 10px white';
+      document.getElementById('dd-c').style.boxShadow = '0 0 10px white';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,'+a+')';
-
-      
 
       /* Calculate the new color and shadow for the text*/
       var redNew = 100 - 19 * a;
@@ -101,6 +100,7 @@ function navbarChange() {
     else if (scrollTop >= wh) {
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,1)';
       document.getElementById('nav').style.boxShadow = '0px 2px 2px grey';
+      document.getElementById('dd-c').style.boxShadow = 'none';
       for (i = 0; i < navLinks.length; i++) {
         navLinks[i].style.color = 'rgb(81%,86%,26%)';
         navLinks[i].style.textShadow = '0px 0px 0px #a2a2a2';
@@ -119,6 +119,7 @@ function navbarChange() {
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,0)';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,0)';
       document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,0)';
+      document.getElementById('dd-c').style.boxShadow = '0 0 10px white';
 
     }
   }
@@ -130,7 +131,6 @@ function disco(event) {
   var x = event.keyCode;
   var y = String.fromCharCode(x);
   word = word + y;
-  console.log(word);
   if (word === "DISCO" || word === "ETIKKEN") {
     word = '';
     var hei = setInterval(colorChange, 150);
