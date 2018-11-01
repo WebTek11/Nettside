@@ -110,7 +110,6 @@ span {
 
 /* Overskrifter tekstbokser */
 .boxFront h2{
-  color: #CFDB42;
   /*position: relative;*/
   top: 28px;
   z-index: 6;
@@ -119,17 +118,6 @@ span {
   text-align: left;
   top: 28px;
   z-index: 6;
-}
-
-/* Se mer-boks */
-a {
-  color: #CFDB42;
-  text-decoration: none;
-}
-
-/*Les mer... skifter farge ved hover.*/
-p a:hover {
-  color: rgb(76,142,57) !important;
 }
 
 /*Se mer-boks*/
