@@ -54,20 +54,12 @@
   padding-bottom: 10px;
   padding-top: 10px;
   position: relative;
-}
-
-/* Tekstbokser */
-.boxBorder {
-  background-color: white;
-  box-shadow: 1px 1px 2px #a2a2a2;
-  padding: 10px 25px 25px 25px;
-  width: 400px;
-  z-index: 5;
+  top: 100px;
 }
 
 /* Seksjonsdeler/bakgrunnskifte */
 .boxContainer {
-  /* Javascript function for 100vh-navbar height */
+  height: 100vh; /* Endres ved js*/
   padding-bottom: 20px;
   padding-top: 30px;
   position: relative;
@@ -82,7 +74,16 @@
 }
 
 span {
-  letter-spacing: -6px;
+  letter-spacing: -5px;
+}
+
+/* Tekstbokser */
+.boxBorder {
+  background-color: white;
+  box-shadow: 1px 1px 2px #a2a2a2;
+  padding: 10px 25px 25px 25px;
+  width: 400px;
+  z-index: 5;
 }
 
 /* Tekstbokser partall */
@@ -91,25 +92,13 @@ span {
   position: relative;
 }
 
-.boxContainer:nth-child(even) .boxFront h2{
-}
-
 /* Tekstbokser oddetall */
 .boxContainer:nth-child(odd) .boxFront .boxBorder{
   background-color: #F6F7EF;
   position: relative;
 }
 
-.boxContainer:nth-child(odd) .boxFront h2{
-}
 
-.boxContainer:nth-child(odd) .boxFront{
-  top: 100px;
-}
-
-.boxContainer:nth-child(even) .boxFront{
-  top: 100px;
-}
 
 /* Overskrifter tekstbokser */
 .boxFront h2{
@@ -174,11 +163,6 @@ p a:hover {
 
   .imgSmall {
     display: none;
-    height: 80px;
-    top: 0 !important;
-    opacity: 0.2;
-    right: 0 !important;
-    width: 100%;
   }
 
   .boxContainer {
@@ -200,10 +184,6 @@ p a:hover {
     width: 100%;
   }
 
-  .imageBox {
-    top: 25vh;
-  }
-
   .boxContainer:nth-child(even) .boxFront .boxBorder {
     left: 0;
   }
@@ -212,14 +192,10 @@ p a:hover {
     left: 0;
   }
 
-  .boxContainer:nth-child(even) .imgSmall {
-    left: 0;
-  }
-
-  .logo {
+  #logo {
     height: 70vw;
     max-height: 70vh;
+    width: 70vw;
     max-width: 70vh;
-    width: 70vW;
   }
 }
