@@ -12,7 +12,7 @@ footer_to_insert.innerHTML = `
 <div class="footerRow">
   <div class="footerColumn">
     <p class="footerHeading">Adresse</p>
-    <p class="footerText"><a href="https://goo.gl/maps/vqRM1G1322J2">Olav Tryggvasons Gate 20 <br> 7011 Trondheim</a></p>
+    <p class="footerText"><a href="https://goo.gl/maps/vqRM1G1322J2" target="_blank">Olav Tryggvasons Gate 20 <br> 7011 Trondheim</a></p>
   </div>
 
   <div class="footerColumn">
