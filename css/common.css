@@ -88,7 +88,7 @@ li a {
   background-color: rgb(76,142,57) !important;
 }
 
-li:hover a{
+li:hover > a{
   color: rgb(76,142,57) !important;
   text-shadow: none;
 }
@@ -286,7 +286,10 @@ h2 {
   /* The container <div> - needed to position the dropdown content */
 
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {
+    color: rgb(76,142,57) !important;
+    background-color: #ffffffba;
+  }
 
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}

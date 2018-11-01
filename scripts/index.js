@@ -76,10 +76,12 @@ function navbarChange() {
 
       /* Change the styling of the navbar and make it go from transparent to white.*/
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,'+a+')';
-
+      
       document.getElementById('nav').style.boxShadow = 'none';
       document.getElementById('nav').style.boxShadow = '0px 1px 10px white';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,'+a+')';
+
+      
 
       /* Calculate the new color and shadow for the text*/
       var redNew = 100 - 19 * a;
@@ -104,6 +106,8 @@ function navbarChange() {
         navLinks[i].style.textShadow = '0px 0px 0px #a2a2a2';
       }
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%)'
+      document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,1)';
+
     }
     /* Default styling for the navbar on no scroll (top of screen).*/
     else {
@@ -114,6 +118,8 @@ function navbarChange() {
       document.getElementById('nav').style.boxShadow = '0px 0px 10px white';
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,0)';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,0)';
+      document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,0)';
+
     }
   }
 }
