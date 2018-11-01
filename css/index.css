@@ -110,13 +110,21 @@ span {
 
 /* Overskrifter tekstbokser */
 .boxFront h2{
+<<<<<<< HEAD
   color: #CFDB42;
+=======
+  /*position: relative;*/
+  top: 28px;
+  z-index: 6;
+  /*text-shadow: 1.5px 1.5px 2px #a2a2a2;*/
+>>>>>>> aa21266b2a72ca00dbd904e104df6158b973191b
   margin-bottom: 5px;
   text-align: left;
   top: 28px;
   z-index: 6;
 }
 
+<<<<<<< HEAD
 /* Se mer-boks */
 a {
   color: #CFDB42;
@@ -127,6 +135,9 @@ a {
 p a:hover {
   color: rgb(76,142,57) !important;
 }
+=======
+/*Se mer-boks*/
+>>>>>>> aa21266b2a72ca00dbd904e104df6158b973191b
 
 .moreBox:hover {
   background-color: green;

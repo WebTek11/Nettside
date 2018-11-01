@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 /* Farge på viktige ord i introduksjon for blikkfang */
 span {
   color: rgb(76,142,57);
 }
 
 /* Plassering av tekstbokser og bilder */
+=======
+/*Plassering av tekstbokser og bilder*/
+>>>>>>> aa21266b2a72ca00dbd904e104df6158b973191b
 .small{
   transform: translateY(-0%) translateX(0%);
   width: 50%;
