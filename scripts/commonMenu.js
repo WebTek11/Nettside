@@ -59,12 +59,12 @@ menu_to_insert.innerHTML = `
     <li id="aboutNav"><a class="links" href="about.html">OM OSS</a> <a href="about.html" class="underline"></a></li>
     <ul class="dropdown">
       <li id="valuesNav"><a class="links dropbtn" href="values.html">VÅRE VERDIER</a> <a href="values.html" class="underline"></a>
-          <div class="dropdown-content">
-            <a href="values.html#link_verdi1" class="drop-links">Bærekraft</a>
-            <a href="values.html#link_verdi2" class="drop-links">Rettferdighet</a>
-            <a href="values.html#link_verdi3" class="drop-links">Dyrevelferd</a>
-            <a href="values.html#link_verdi4" class="drop-links">Helse</a>
-            <a href="values.html#link_verdi5" class="drop-links">Tilgjengelighet</a>
+          <div class="dropdown-content" id="dd-c">
+            <a href="values.html#link_verdi1" class="links">Bærekraft</a>
+            <a href="values.html#link_verdi2" class="links">Rettferdighet</a>
+            <a href="values.html#link_verdi3" class="links">Dyrevelferd</a>
+            <a href="values.html#link_verdi4" class="links">Helse</a>
+            <a href="values.html#link_verdi5" class="links">Tilgjengelighet</a>
           </div>
       </li>
     </ul>
