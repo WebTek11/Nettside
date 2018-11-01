@@ -93,7 +93,7 @@ h1 {
 }
 
 .expandIcon {
-  background-color: rgb(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
   border-radius: 50%;
   box-shadow: 0px 0px 8px black;
   height: 30px;
@@ -145,13 +145,13 @@ i {
 }
 
 .right {
-  -webkit-transform: rotate(-45deg);
+  /* -webkit-transform: rotate(-45deg); */
   left: 2px;
   transform: rotate(-45deg);
 }
 
 .left {
-  -webkit-transform: rotate(135deg);
+  /* -webkit-transform: rotate(135deg); */
   left: 7px;
   transform: rotate(135deg);
 }

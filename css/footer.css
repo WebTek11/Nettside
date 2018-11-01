@@ -24,7 +24,7 @@ body {
 
 /* Styler footeren */
 #commonFooter {
-    background-color: white;
+    background-color: rgb(255,255,255);
     bottom: -200px;
     box-sizing: content-box;
     height: 170px;
@@ -60,7 +60,7 @@ body {
 }
 
 .footerText a:hover {
-  color: #CFDB42;
+  color: rgb(207,219,66);
 }
 
 .socialIcons {
@@ -68,7 +68,7 @@ body {
   text-align: center;
 }
 
-/* Endrer footeren til en enkel kolonne når det er nødvendig */
+/* Endrer footeren til 1 kolonne på små skjermer */
 @media screen and (max-width: 960px) {
   .footerColumn {
     margin-bottom: 15px;
