@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-/* Farge på viktige ord i introduksjon for blikkfang */
-span {
-  color: rgb(76,142,57);
-}
-
 /* Plassering av tekstbokser og bilder */
-=======
-/*Plassering av tekstbokser og bilder*/
->>>>>>> aa21266b2a72ca00dbd904e104df6158b973191b
 .small{
   transform: translateY(-0%) translateX(0%);
   width: 50%;
@@ -21,16 +12,12 @@ span {
   z-index: +5;
 }
 
-<<<<<<< HEAD
 /* Style for siste infoboks med linker */
 .head {
   font-weight: bold;
 }
 
 /* Vise i menyen at du er inne på "Verdier"-siden */
-=======
-/*Du er inne på siden*/
->>>>>>> aa21266b2a72ca00dbd904e104df6158b973191b
 #valuesNav .underline{
   width: calc(100% - 40px) !important;
 }
