@@ -1,75 +1,73 @@
-/*Fremsidebilde*/
+/* Forsidebilde */
 .frontImg {
   height: 100vh;
-  width: 100%;
   object-fit: cover;
   position: relative;
   top: 0px;
+  width: 100%;
 }
 
 #imageBox {
-  width: 100%;
   height: 100vh;
   position: relative;
   top: -83px;
+  width: 100%;
   z-index: -1;
 }
 
 #centerLogo {
-  max-width: 960px;
   height: 100vh;
   margin: auto;
+  max-width: 960px;
   position: relative;
   top: -100vh;
 }
 #logoBig {
-  position: absolute;
   height: 102.2%;
-  width: 102.2%;
+  position: absolute;
   right: -1.47%;
   top: -1.6%;
+  width: 102.2%;
 }
 
 .logo {
-  height: 60vh;
-  width: 60vh;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
   background-color: #CFDB42;
   border-radius: 50%;
+  display: block;
+  height: 60vh;
+  left: 50%;
+  margin-right: -50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vh;
 }
-/*Fremsidebilde slutt*/
 
-/*Alle boksene som ikke er navbar eller footer*/
+/* Alle boksene som ikke er navbar eller footer */
 .boxFront {
-  max-width: 860px;
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding: 10px 50px 10px 50px;
-  position: relative;
   height: 100%;
+  margin: auto;
+  max-width: 860px;
+  padding: 10px 50px 10px 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
 }
 
-/*Tekstbokser */
+/* Tekstbokser */
 .boxBorder {
-  width: 400px;
-  padding: 10px 25px 25px 25px;
-  box-shadow: 1px 1px 2px #a2a2a2;
   background-color: white;
-  /*max-height: 300px;*/
+  box-shadow: 1px 1px 2px #a2a2a2;
+  padding: 10px 25px 25px 25px;
+  width: 400px;
   z-index: 5;
 }
 
 /* Seksjonsdeler/bakgrunnskifte */
 .boxContainer {
-  /*js function for 100vh-navbar height*/
-  padding-top: 30px;
+  /* Javascript function for 100vh-navbar height */
   padding-bottom: 20px;
+  padding-top: 30px;
   position: relative;
 }
 
@@ -85,23 +83,22 @@ span {
   letter-spacing: -6px;
 }
 
-/*Tekstbokser partall*/
+/* Tekstbokser partall */
 .boxContainer:nth-child(even) .boxFront .boxBorder{
-  position: relative;
   left: 400px;
+  position: relative;
 }
 
 .boxContainer:nth-child(even) .boxFront h2{
 }
 
-/*Tekstbokser oddetall*/
+/* Tekstbokser oddetall */
 .boxContainer:nth-child(odd) .boxFront .boxBorder{
-  position: relative;
   background-color: #F6F7EF;
+  position: relative;
 }
 
 .boxContainer:nth-child(odd) .boxFront h2{
-  margin: 0px;
 }
 
 .boxContainer:nth-child(odd) .boxFront{
@@ -111,56 +108,42 @@ span {
   top: 100px;
 }
 
-/*Overskrifter tekstbokser*/
+/* Overskrifter tekstbokser */
 .boxFront h2{
   /*position: relative;*/
-  margin-bottom: 5px;
-  margin-top: 0px;
   top: 28px;
   z-index: 6;
-
-  text-align: left;
-  padding-left: 0px;
-  color: #CFDB42;
-  font-size: 45px;
-  font-weight: bold;
   /*text-shadow: 1.5px 1.5px 2px #a2a2a2;*/
+  margin-bottom: 5px;
+  text-align: left;
+  top: 28px;
+  z-index: 6;
 }
 
 /*Se mer-boks*/
-a {
-  text-decoration: none;
-  color: #CFDB42;
-}
-
-/*Les mer... skifter farge ved hover.*/
-p a:hover {
-  color: rgb(76,142,57);
-}
-
 .moreBox:hover {
-  color: white;
   background-color: green;
+  color: white;
 }
 
 #backImg {
-  width: 100%;
   height: 100vh;
   object-fit: cover;
+  opacity: 0.6;
   position:fixed;
   top: 0px;
+  width: 100%;
   z-index: -1;
-  opacity: 0.6;
 }
 
 .imgSmall {
+  border-radius: 0%;
   height: 100%;
   object-fit: cover;
-  width: 500px;
-  position: absolute;
   opacity: 0.8;
-  border-radius: 0%;
   overflow: hidden;
+  position: absolute;
+  width: 500px;
 }
 
 .boxContainer:nth-child(even) .imgSmall{
@@ -172,7 +155,7 @@ p a:hover {
   right: 50px;
   top: 10%;
 }
-/*Bokser slutt*/
+/* Bokser slutt */
 
 @media screen and (max-width: 960px) {
   .frontImg {
@@ -184,46 +167,47 @@ p a:hover {
   }
 
   .boxFront {
-    width: 100%;
-    padding: 0;
     margin: 0;
     max-width: 960px;
     top: 0 !important;
+    padding: 0;
+    width: 100%;
   }
 
   .boxBorder {
-    width: 100%;
-    min-height: 100%;
-    box-shadow: none;
     background-color: inherit !important;
+    box-shadow: none;
+    min-height: 100%;
     padding: 5%;
-  }
-  .imgSmall {
     width: 100%;
+  }
+
+  .imgSmall {
+    display: none;
     height: 80px;
     top: 0 !important;
-    right: 0 !important;
     opacity: 0.2;
-    display: none;
+    right: 0 !important;
+    width: 100%;
   }
 
   .boxContainer {
-    padding: 0;
-    height: auto;
-    margin: 0;
     height: auto !important;
+    margin: 0;
     overflow: hidden;
+    padding: 0;
   }
+
   .boxFront h2 {
-    width: 100%;
+    font-size: 270%;
+    left: 0;
+    margin: 0 !important;
+    max-width: 100%;
     padding: 0;
     text-align: left;
-    left: 0;
-    top: 0;
-    margin: 0 !important;
-    font-size: 270%;
-    max-width: 100%;
     text-shadow: none;
+    top: 0;
+    width: 100%;
   }
   .imageBox {
     top: 25vh;
@@ -232,17 +216,19 @@ p a:hover {
   .boxContainer:nth-child(even) .boxFront .boxBorder {
     left: 0;
   }
+
   .boxContainer:nth-child(even) .boxFront h2 {
     left: 0;
   }
+
   .boxContainer:nth-child(even) .imgSmall {
     left: 0;
   }
 
   .logo {
     height: 70vw;
-    width: 70vW;
     max-height: 70vh;
     max-width: 70vh;
+    width: 70vW;
   }
 }
