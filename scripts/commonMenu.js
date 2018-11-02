@@ -60,8 +60,8 @@ menu_to_insert.innerHTML = `
     <ul class="dropdown">
       <li id="valuesNav"><a class="links dropbtn" href="values.html">VÅRE VERDIER</a> <a href="values.html" class="underline"></a>
           <div class="dropdown-content" id="dd-c">
-            <a href="values.html#link_verdi1" class="links">Bærekraft</a>
-            <a href="values.html#link_verdi2" class="links">Rettferdighet</a>
+            <a href="values.html#link_verdi1" class="links">Økologisk bærekraft</a>
+            <a href="values.html#link_verdi2" class="links">Rettferdig handel</a>
             <a href="values.html#link_verdi3" class="links">Dyrevelferd</a>
             <a href="values.html#link_verdi4" class="links">Helse</a>
             <a href="values.html#link_verdi5" class="links">Tilgjengelighet</a>

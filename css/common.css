@@ -56,7 +56,7 @@ em {
   position: sticky;
   top: 0px;
   z-index: 10;
-  max-height: 83px;
+  height: 83px;
 }
 
 ul {
@@ -68,6 +68,7 @@ ul {
 li {
   float: left;
   position: relative;
+  left: 120px;
 }
 
 li a {
@@ -132,27 +133,22 @@ li:hover .underline{
 
 #aboutNav {
   width: 130px;
-  left: 120px;
 }
 
 #valuesNav{
   width: 200px;
-  left: 250px;
 }
 
 #productsNav{
   width: 175px;
-  left: 320px;
 }
 
 #webpageNav{
   width: 175px;
-  left: 320px;
 }
 
 #contactNav{
   width: 150px;
-  left: 320px;
 }
 
 /* Responsive navbar */
@@ -253,7 +249,6 @@ li:hover .underline{
 
 .dropdown {
   position: relative;
-  display: -webkit-inline-box;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -261,8 +256,7 @@ li:hover .underline{
   display: none;
   position: absolute;
   background-color: rgb(255,255,255);
-  margin-left: 10%;
-  min-width: 160px;
+  width: 200px;
   box-shadow: 2px 2px 2px grey;
 }
 
@@ -271,6 +265,8 @@ li:hover .underline{
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 960px) {
