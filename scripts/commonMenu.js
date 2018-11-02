@@ -108,7 +108,7 @@ function responsiveNav() {
     let g = document.getElementById("logo")
     if (i.className === "navbar_responsive") {
       g.style.display = "none";
-      document.getElementById('frontImg').style.opacity = "0.6"
+      document.getElementById('frontImg').style.opacity = "0.75"
     }
     else {
       g.style.display = "block";
