@@ -13,26 +13,31 @@
   <body onresize="controlFunc(), setNavBarResize(), setBoxHeight()" onkeydown="disco(event)" >
     <div class="navbar" id="nav"></div>
 
-    <div id="imageBox">
-      <picture>
-        <source srcset="img/2560/lyng.jpg" media="(min-width: 1921px)">
-        <source srcset="img/1920/lyng.jpg" media="(min-width: 1681px)">
-        <source srcset="img/1680/lyng.jpg" media="(min-width: 1281px)">
-        <source srcset="img/1280/lyng.jpg" media="(min-width: 961px)">
-        <source srcset="img/960/lyng.jpg" media="(min-width: 641px)">
-        <img src="img/640/lyng.jpg" alt="front image" class="frontImg" id="frontImg">
-      </picture>
-
-    <div id="centerLogo">
-      <div class="logo" id="logo">
+      <div id="imageBox">
         <picture>
-          <source srcset="img/2560/etikken_transparent.png" media="(min-width: 1921px)">
-          <source srcset="img/1680/etikken_transparent.png" media="(min-width: 1281px)">
-          <source srcset="img/960/etikken_transparent.png" media="(min-width: 641px)">
-          <img src="img/480/etikken_transparent.png" alt="Etikken logo" id="logoBig">
+          <source srcset="img/2560/lyng.jpg" media="(min-width: 1921px)">
+          <source srcset="img/1920/lyng.jpg" media="(min-width: 1681px)">
+          <source srcset="img/1680/lyng.jpg" media="(min-width: 1281px)">
+          <source srcset="img/1280/lyng.jpg" media="(min-width: 961px)">
+          <source srcset="img/960/lyng.jpg" media="(min-width: 641px)">
+          <img src="img/640/lyng.jpg" alt="front image" class="frontImg" id="frontImg">
         </picture>
+
+      <div id="centerLogo">
+        <div class="logo" id="logo">
+          <picture>
+            <source srcset="img/2560/etikken_transparent.png" media="(min-width: 1921px)">
+            <source srcset="img/1680/etikken_transparent.png" media="(min-width: 1281px)">
+            <source srcset="img/960/etikken_transparent.png" media="(min-width: 641px)">
+            <img src="img/480/etikken_transparent.png" alt="Etikken logo" id="logoBig">
+          </picture>
+        </div>
       </div>
-    </div>
+
+      <div id="opening">
+        <h3>Åpningstider</h3><br>
+        <p>Mandag-Lørdag <br>10:00-18:00</p>
+      </div>
     </div>
 
     <div class="container" id="container">
