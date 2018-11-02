@@ -52,7 +52,7 @@ menu_to_insert = document.createElement("div");
 // This is the pure HTML to be inserted. Keep it within the ``;
 menu_to_insert.innerHTML = `
 <div class="navbarInside">
-  <a href="index.html" id="logoStore"><img src="img/icon/etikken_plain_small.png" id="logoSmall" alt="logo"></a>
+  <a href="index.html" id="logoStore"><img src="img/originals/Etikken_logo/EtikkenPlain.png" id="logoSmall" alt="logo"></a>
   <a id="burger" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/burger.svg" alt="icon"></a>
   <a id="cross" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/cross.svg" alt="icon"></a>
   <ul class="mainBar">
