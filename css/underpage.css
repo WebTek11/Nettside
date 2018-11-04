@@ -155,3 +155,24 @@ i {
   left: 7px;
   transform: rotate(135deg);
 }
+
+/* Plassering av tekstbokser og bilder */
+.small{
+  transform: translateY(-0%) translateX(0%);
+  width: 50%;
+}
+
+.imgSmall {
+  height: auto;
+  position: absolute;
+  transform: translateY(-80%) translateX(128%);
+  width: 350px;
+  z-index: +5;
+}
+
+@media screen and (max-width: 960px) {
+  .figure {
+    margin: 0;
+    position: relative;
+  }
+}
