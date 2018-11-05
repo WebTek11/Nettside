@@ -239,7 +239,7 @@ span {
   #centerLogo {
     top: 0;
   }
-  
+
   #opening {
     bottom: 20px;
     top: auto;
@@ -249,12 +249,12 @@ span {
 /* Skjuler bilder i slideshowet */
 * {box-sizing:border-box}
 
-.mySlides {
+.slides {
   display: none;
   height: 100%;
 }
 
-.imgSlides {
+.slideImg {
   height: 100%;
   object-fit: cover;
   width: 100%;
