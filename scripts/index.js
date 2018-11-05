@@ -78,10 +78,11 @@ function navbarChange() {
     if (scrollTop > whHalf && scrollTop < wh) {
       var a = (scrollTop - whHalf)/whHalf;
       var b = a*0.5+0.5;
+      var c = 70*a + 185;
 
       /* Change the styling of the navbar and make it go from transparent to white.*/
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,'+a+')';
-      document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,'+b+')';
+      document.getElementById("dd-c").style.backgroundColor = 'rgb('+c+','+c+','+c+','+b+')';
       document.getElementById('nav').style.boxShadow = 'none';
       document.getElementById('nav').style.boxShadow = '0 1px 10px white';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,'+a+')';
@@ -121,7 +122,7 @@ function navbarChange() {
       document.getElementById('nav').style.boxShadow = '0px 0px 10px white';
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,0)';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,0)';
-      document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,0.5)';
+      document.getElementById("dd-c").style.backgroundColor = 'rgb(185,185,185,0.5)';
     }
   }
 }

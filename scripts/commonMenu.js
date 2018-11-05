@@ -187,10 +187,8 @@ for (var i = 0; i < site_names.length; i++) {
     var block;
     block = document.getElementById(class_names[i]);
     var underline = block.getElementsByClassName("underline");
-    console.log(underline);
     underline[0].style.width = "calc(100% - 40px)";
     var link = block.getElementsByClassName("links")
-    console.log(link);
     if (window.innerWidth > 960) {
       link[0].style.color = "rgb(76,142,57)";
     }

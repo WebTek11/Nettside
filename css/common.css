@@ -342,7 +342,7 @@ body {
     background-color: rgb(255,255,255);
     bottom: -200px;
     box-sizing: content-box;
-    height: 170px;
+    min-height: 170px;
     padding-top: 30px;
     position: absolute;
     text-align: center;
