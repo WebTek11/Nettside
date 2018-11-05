@@ -282,3 +282,88 @@ li:hover .underline{
   .dropdown:hover .dropdown-content {display: block;}
   .dropbtn:hover .dropdown-content {display: block;}
 }
+
+/* Footer CSS */
+/* Deler footeren i 3 kolonner */
+body {
+  margin-bottom: 0px;
+}
+
+.footerBox {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden; /* Fjerner en hvit linje under footeren */
+}
+
+.footerColumn {
+  float: left;
+  padding-bottom: 20px;
+  width: 33.33%;
+}
+
+.footerRow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Styler footeren */
+#commonFooter {
+    background-color: rgb(255,255,255);
+    bottom: -200px;
+    box-sizing: content-box;
+    height: 170px;
+    padding-top: 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+#commonFooter p {
+  margin-top: 5px;
+}
+
+#footerIconCenter {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footerHeading {
+  color: green;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footerText {
+  color: green;
+  font-size: 1em;
+}
+
+.footerText a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footerText a:hover {
+  color: rgb(207,219,66);
+}
+
+.socialIcons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Endrer footeren til 1 kolonne på små skjermer */
+@media screen and (max-width: 960px) {
+  .footerColumn {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  #commonFooter {
+    height: auto;
+    position: relative;
+  }
+}
+/* SLutt Footer CSS */

@@ -8,7 +8,7 @@ max-width: 100%;
   text-align: center;
 }
 
-/* Viser i menyen at man er inne på "Om oss"-siden */
+/* Viser i menyen at man er inne på "Kontakt"-siden */
 #contactNav .underline{
   width: calc(100% - 40px) !important;
 }

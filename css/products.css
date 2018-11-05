@@ -1,4 +1,4 @@
-/* Viser i menyen at man er inne på "produkt"-siden */
+/* Viser i menyen at man er inne på "Produkt"-siden */
 #productsNav .underline{
   width: calc(100% - 40px) !important;
 }
