@@ -245,6 +245,9 @@ li:hover .underline{
     display: none;
   }
 
+  .links {
+    padding: 6%;
+  }
 }
 
 /* Drodown-menu */
