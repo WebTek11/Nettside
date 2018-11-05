@@ -22,7 +22,7 @@
 }
 
 #imageBox {
-  height: 100%;
+  height: 100vh;
   position: relative;
   top: -83px;
   width: 100%;
