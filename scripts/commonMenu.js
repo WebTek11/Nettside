@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 var site_names = ["Om oss","Kontakt oss","Produkter","Verdier"];
 var class_names = ["aboutNav","contactNav","productsNav","valuesNav"];
 
-// This block creates and inserts a footer
-// Insert <div id="commonFooter"></div> wherever you want a footer
-=======
 /* Lager og setter inn en footer. Sett inn <div id="commonFooter"></div>
 der man ønsker footer */
->>>>>>> a9b1e8bbfc2a9a6aa4480848ca21042eb20ef030
 var footer_to_insert;
 var footer_container;
 
