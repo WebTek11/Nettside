@@ -2,6 +2,14 @@ html {
   height: 100%;
 }
 
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: auto;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
 h2 {
   text-align: center;
   color: rgb(207,219,66);
@@ -19,6 +27,15 @@ h3 {
   overflow-wrap: break-word;
 }
 
+a {
+  color: #CFDB42;
+  text-decoration: none;
+}
+
+em {
+  color: rgb(76,142,57);
+}
+
 p {
   color: rgb(66,66,66);
   font-size: 1.2em;
@@ -28,37 +45,11 @@ p {
   overflow-wrap: break-word;
 }
 
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: auto;
-  min-height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-a {
-  color: #CFDB42;
-  text-decoration: none;
-}
-
 p a:hover {
   color: rgb(76,142,57);
 }
 
-em {
-  color: rgb(76,142,57);
-}
-
 /* Navbar */
-.navbar {
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 2px 2px grey;
-  position: sticky;
-  top: 0px;
-  z-index: 10;
-  height: 83px;
-}
-
 ul {
   list-style-type: none;
   margin: 0 auto 0 auto;
@@ -82,21 +73,25 @@ li a {
   transition: color 0.2s ease;
 }
 
-
-#logoSmall:hover {
-  background-color: rgb(76,142,57) !important;
-}
-
 li:hover > a{
   color: rgb(76,142,57) !important;
   text-shadow: none;
 }
 
-/* Underline og fargeendring ved hover */
-li:hover .underline{
-  width: calc(100% - 40px);
+.navbar {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 2px grey;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  height: 83px;
 }
 
+#logoSmall:hover {
+  background-color: rgb(76,142,57) !important;
+}
+
+/* Underline og fargeendring ved hover */
 .underline {
   background-color: rgb(76,142,57);
   border-radius: 2px;
@@ -117,6 +112,10 @@ li:hover .underline{
   border-left: 2px white;
   margin: auto;
   max-width: 960px;
+}
+
+li:hover .underline{
+  width: calc(100% - 40px);
 }
 
 /* Navelementer */
@@ -173,10 +172,6 @@ li:hover .underline{
     width: auto !important;
   }
 
-  #nav {
-    height: 83px;
-  }
-
   .navbar_responsive .mainBar {
     overflow: visible;
     padding-top: 85px;
@@ -221,18 +216,6 @@ li:hover .underline{
     width: 30px;
   }
 
-  #logoSmall {
-    display: none;
-  }
-
-  .navbar_responsive #burger {
-    display: none;
-  }
-
-  .navbar #burger, .navbar_responsive #cross {
-    display: block;
-  }
-
   .underline {
     display: none !important;
   }
@@ -245,6 +228,23 @@ li:hover .underline{
   .dropdown-content {
     display: none !important;
   }
+
+  .navbar_responsive #burger {
+    display: none;
+  }
+
+  .navbar #burger, .navbar_responsive #cross {
+    display: block;
+  }
+
+  #nav {
+    height: 83px;
+  }
+
+  #logoSmall {
+    display: none;
+  }
+
 }
 
 .dropdown {
@@ -309,26 +309,6 @@ body {
 }
 
 /* Styler footeren */
-#commonFooter {
-    background-color: rgb(255,255,255);
-    bottom: -200px;
-    box-sizing: content-box;
-    height: 170px;
-    padding-top: 30px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
-
-#commonFooter p {
-  margin-top: 5px;
-}
-
-#footerIconCenter {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .footerHeading {
   color: green;
   font-size: 1.2em;
@@ -352,6 +332,26 @@ body {
 .socialIcons {
   margin-top: 10px;
   text-align: center;
+}
+
+#commonFooter {
+    background-color: rgb(255,255,255);
+    bottom: -200px;
+    box-sizing: content-box;
+    height: 170px;
+    padding-top: 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+#commonFooter p {
+  margin-top: 5px;
+}
+
+#footerIconCenter {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Endrer footeren til 1 kolonne på små skjermer */
