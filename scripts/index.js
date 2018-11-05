@@ -14,11 +14,15 @@ function controlFunc() {
   if (window.innerWidth > 960){
     navbarChange()
     imageParallax()}
+  else if (window.pageYOffset > window.innerHeight) {
+    document.getElementById('opening').style.display = "none";
+  }
   else {
     document.getElementById('nav').style.backgroundColor = 'rgba(255,255,255,0)';
     document.getElementById('nav').style.boxShadow = 'none';
     document.getElementById('centerLogo').style.top = '0';
     document.getElementById('imageBox').style.top = '-83px';
+    document.getElementById('opening').style.display = "block";
   }
 }
 
@@ -118,7 +122,6 @@ function navbarChange() {
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,0)';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,0)';
       document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,0.5)';
-
     }
   }
 }
@@ -141,4 +144,6 @@ function disco(event) {
 function colorChange() {
   let randomColor = Math.floor(Math.random()*16777215).toString(16);
   document.getElementById('logo').style.backgroundColor = '#'+randomColor;
+  randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.getElementById('opening').style.backgroundColor = '#'+randomColor;
 }
