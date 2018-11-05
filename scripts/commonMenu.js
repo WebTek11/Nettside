@@ -197,4 +197,3 @@ for (var i = 0; i < site_names.length; i++) {
     }
   }
 }
-console.log(document.title);
