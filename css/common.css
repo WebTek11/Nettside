@@ -309,26 +309,6 @@ body {
 }
 
 /* Styler footeren */
-#commonFooter {
-    background-color: rgb(255,255,255);
-    bottom: -200px;
-    box-sizing: content-box;
-    height: 170px;
-    padding-top: 30px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
-
-#commonFooter p {
-  margin-top: 5px;
-}
-
-#footerIconCenter {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .footerHeading {
   color: green;
   font-size: 1.2em;
@@ -352,6 +332,26 @@ body {
 .socialIcons {
   margin-top: 10px;
   text-align: center;
+}
+
+#commonFooter {
+    background-color: rgb(255,255,255);
+    bottom: -200px;
+    box-sizing: content-box;
+    height: 170px;
+    padding-top: 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+#commonFooter p {
+  margin-top: 5px;
+}
+
+#footerIconCenter {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Endrer footeren til 1 kolonne på små skjermer */
