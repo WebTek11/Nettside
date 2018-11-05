@@ -249,8 +249,8 @@ li:hover .underline{
 
 /* Drodown-menu */
 
-/* implementation inspired by W3Schools's hoverable dropdown menu. 
-Html can be found in commonmenu.js */
+/* implementation inspired by W3Schools's hoverable dropdown menu. Html can be found in commonmenu.js 
+  https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .dropdown {
   position: relative;
@@ -268,24 +268,20 @@ Html can be found in commonmenu.js */
 /* Links inside the dropdown */
 .dropdown-content a {
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
   font-size: 18px;
   text-transform: uppercase;
 }
 
+/* Only show on non-mobile screens */
 @media screen and (min-width: 960px) {
-  /* The container <div> - needed to position the dropdown content */
 
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
     color: rgb(76,142,57) !important;
     background-color: rgba(255,255,255,0.8);
   }
 
-  /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
-  .dropbtn:hover .dropdown-content {display: block;}
 }
 
 
