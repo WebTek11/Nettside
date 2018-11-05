@@ -1,9 +1,9 @@
 var slideNumber = 1;
 slideshow();
 
-function slideshow() {
 /* Funksjonen viser et slideshow av bilder der det skiftes på hvilket bilde
 som vises hvert 4. sekund. */
+function slideshow() {
     var i;
     var slides = document.getElementsByClassName("slides");
     if (slideNumber > slides.length) {

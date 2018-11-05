@@ -1,4 +1,5 @@
-/* Controlles that some code on resize only is done when window goes from being under 960 to over 960.*/
+/* Kontrollerer at noe kode på reskalering bare gjøres når vinduet går fra å
+være under 960 px til over 960 */
 var wind = window.innerWidth;
 
 navbarChange()
@@ -7,8 +8,8 @@ controlFunc()
 
 document.onscroll = controlFunc;
 
-/* Function that tells navbarChange and imageParallax not to run on window < 960.
-sets styles for elements on mobile that need this.*/
+/* Function som gjør at navbarChange og imageParallax ikke kjøres på vinduer
+under 960 px. Setter styles for elements på mobiler som trenger dette */
 function controlFunc() {
   wind = window.innerWidth;
   if (window.innerWidth > 960){
@@ -16,7 +17,7 @@ function controlFunc() {
     imageParallax()}
   /* Gjemmer Åpningstiderboksen når du har scrollet nedoversiden, slik at den ikke
   dukker opp i mellomrommet mellom tekstboksene og footeren. Gjemmer boksen også
-  når hamburgermenyen er åpen.*/
+  når hamburgermenyen er åpen */
   else if (window.scrollY > 282) {
     document.getElementById('opening').style.display = "none";
   }
@@ -32,7 +33,8 @@ function controlFunc() {
   }
 }
 
-/* Makes front page image move together with scrolling, making a parallax effect.*/
+/* Lar forsidebildet bevege seg sammen med scrolling slik at det blir
+parallax effekt */
 function imageParallax() {
     var scrollTop = window.pageYOffset;
     if (scrollTop < window.innerHeight) {
@@ -44,8 +46,8 @@ function imageParallax() {
     }
 }
 
-/* Sets height for the boxes on the front page such that their height is equal
-to the height of the window minus the navbar.*/
+/* Setter høyde for boksene på forsiden slik at høyden blir lik høyden til
+vinduet minus navbar */
 function setBoxHeight() {
   if (window.innerWidth > 960 && wind > 960){
     var wh = window.innerHeight - 83;
@@ -73,7 +75,7 @@ function setBoxHeight() {
   }
 }
 
-/* Changes the navbars colors smoothly.*/
+/* Endrer fargene til navbar */
 function navbarChange() {
   if (window.innerWidth > 960) {
     var wh = window.innerHeight;
@@ -86,14 +88,14 @@ function navbarChange() {
       var b = a*0.5+0.5;
       var c = 70*a + 185;
 
-      /* Change the styling of the navbar and make it go from transparent to white.*/
+      /* Endrer styling av navbar og endrer den fra transparent til hvit */
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,'+a+')';
       document.getElementById("dd-c").style.backgroundColor = 'rgb('+c+','+c+','+c+','+b+')';
       document.getElementById('nav').style.boxShadow = 'none';
       document.getElementById('nav').style.boxShadow = '0 1px 10px white';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,'+a+')';
 
-      /* Calculate the new color and shadow for the text*/
+      /* Kalkulerer ny farge og skygge for teksten */
       var redNew = 100 - 19 * a;
       var greenNew = 100 - 14 * a;
       var blueNew = 100 - 72 * a;
@@ -107,7 +109,8 @@ function navbarChange() {
         navLinks[i].style.textShadow = '0px 0px '+shadowNew+'px #a2a2a2';
       }
     }
-    /* Styling when scrolled passed front image.*/
+
+    /* Styling når man har scrollet forbi forsidebildet */
     else if (scrollTop >= wh) {
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,1)';
       document.getElementById('nav').style.boxShadow = '0px 2px 2px grey';
@@ -119,7 +122,8 @@ function navbarChange() {
       document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,1)';
 
     }
-    /* Default styling for the navbar on no scroll (top of screen).*/
+
+    /* Standard styling for navbar ved ingen scrolling (toppen av siden) */
     else {
       for (i = 0; i < navLinks.length; i++) {
         navLinks[i].style.color = 'white';
@@ -144,14 +148,15 @@ function disco(event) {
     word = '';
     var hei = setInterval(colorChange, 150);
   }
-  /* Starter ordet på ny dersom backspace eller esc blir trykket*/
+  /* Starter ordet på ny dersom backspace eller esc blir trykket */
   else if (x == 27 || x == 8) {
     word = '';
   }
 }
 
 function colorChange() {
-  /* Hentet kode for tilfeldig farge fra Chris Coyier ved https://css-tricks.com/snippets/javascript/random-hex-color/*/
+  /* Hentet kode for tilfeldig farge fra Chris Coyier
+  ved https://css-tricks.com/snippets/javascript/random-hex-color/ */
   let randomColor = Math.floor(Math.random()*16777215).toString(16);
   document.getElementById('logo').style.backgroundColor = '#'+randomColor;
   randomColor = Math.floor(Math.random()*16777215).toString(16);

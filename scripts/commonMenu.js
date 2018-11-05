@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 var site_names = ["Om oss","Kontakt oss","Produkter","Verdier"];
 var class_names = ["aboutNav","contactNav","productsNav","valuesNav"];
 
 // This block creates and inserts a footer
 // Insert <div id="commonFooter"></div> wherever you want a footer
+=======
+/* Lager og setter inn en footer. Sett inn <div id="commonFooter"></div>
+der man ønsker footer */
+>>>>>>> a9b1e8bbfc2a9a6aa4480848ca21042eb20ef030
 var footer_to_insert;
 var footer_container;
 
@@ -10,7 +15,7 @@ var footer_container;
 footer_to_insert = document.createElement("footer");
 footer_to_insert.class = "footer"
 
-// This is the pure HTML to be inserted. Keep it within the ``;
+/* HTML som skal settes inn, hold den mellom ``-tegnene */
 footer_to_insert.innerHTML = `
 <div class="footerBox">
 <div class="footerRow">
@@ -46,14 +51,14 @@ footer_to_insert.innerHTML = `
 footer_container = document.getElementById("commonFooter");
 footer_container.appendChild(footer_to_insert);
 
-// This block creates and inserts a navbar
-// Insert <div class="navbar" id="nav"></div> wherever you want a navbar
+/* Lager og setter inn en navbar. Sett inn <div class="navbar" id="nav"></div>
+der man ønsker navbar */
 var menu_to_insert;
 var menu_container;
 
 menu_to_insert = document.createElement("div");
 
-// This is the pure HTML to be inserted. Keep it within the ``;
+/* HTML som skal settes inn, hold den mellom ``-tegnene */
 menu_to_insert.innerHTML = `
 <div class="navbarInside">
   <a href="index.html" id="logoStore"><img src="img/originals/Etikken_logo/EtikkenPlain.png" id="logoSmall" alt="logo"></a>
@@ -82,9 +87,10 @@ menu_to_insert.innerHTML = `
 menu_container = document.getElementById("nav");
 menu_container.appendChild(menu_to_insert);
 var ypos = window.pageYOffset;
-// Responsive navbar
+
+/* Responsiv navbar */
 function responsiveNav() {
-  // Opens and closes the menu
+  /* Funksjonen åpner og lukker menyen */
   let i = document.getElementById("nav")
   if (i.className === "navbar") {
     i.className += "_responsive";
@@ -93,21 +99,23 @@ function responsiveNav() {
     i.className = "navbar";
   }
 
-  // Hides the footer when the menu is open
+  /* Skjuler footer når menyen er open */
   let f = document.getElementById("commonFooter")
   if (i.className === "navbar_responsive") {
     f.style.display = "none";
   } else {
     f.style.display = "block";
   }
-  // Hides the content when the menu is open
+
+  /* Skjuler innholdet når menyen er åpen */
   let c = document.querySelector(".container")
   if (i.className === "navbar_responsive") {
     c.style.display = "none";
   } else {
     c.style.display = "block";
   }
-  // Hides Logo Front Page, only on front page
+
+  /* Skjuler #logo på fremsiden */
   if (document.getElementById("logo")) {
     let g = document.getElementById("logo")
     if (i.className === "navbar_responsive") {
@@ -121,7 +129,8 @@ function responsiveNav() {
       document.getElementById('opening').style.display = "block";
     }
   }
-  // Fixes empty spacing on resposive nav
+
+  /* Fikser tomrom på responsiv navbar */
   let z = document.body
   if (i.className === "navbar_responsive") {
     z.style.height = "100%";
@@ -137,7 +146,8 @@ function responsiveNav() {
   else {
     y.style.display = "none";
   }
-  /* Fixes mixcolored navbarlinks*/
+
+  /* Fikser flerfargede navbar-linker */
   let navColor = document.getElementsByClassName("links")
   document.getElementById("logoSmall").style.backgroundColor = "#CFDB42"
   if (i.className === "navbar_responsive" || document.title === "Etikken") {
@@ -158,7 +168,7 @@ function responsiveNav() {
   currentSite()
 }
 
-/* Makes navbar work with resizing of screen. Changing orientation on iPad for example*/
+/* Sørger for at navbar fungerer når størrelsen og retning på skjermen endres. */
 var win = window.innerWidth;
 
 function setNavBarResize() {
