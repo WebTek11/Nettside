@@ -1,4 +1,13 @@
-/* Forsidebilde */
+/* Boks med alle fremsidebilder/elementer*/
+#imageBox {
+  height: 100vh;
+  position: relative;
+  top: -83px;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Selve forsidebilde*/
 .frontImg {
   height: 100vh;
   object-fit: cover;
@@ -6,7 +15,16 @@
   top: 0px;
   width: 100%;
 }
+/* div som sentrerer Logo*/
+#centerLogo {
+  height: 100vh;
+  margin: auto;
+  max-width: 960px;
+  position: relative;
+  top: -100vh;
+}
 
+/* div som setter bakgrunnsfarge på logo også ansvarlig for videre sentrering*/
 .logo {
   background-color: rgb(207,219,66);
   border-radius: 50%;
@@ -21,21 +39,7 @@
   z-index: 100;
 }
 
-#imageBox {
-  height: 100vh;
-  position: relative;
-  top: -83px;
-  width: 100%;
-  z-index: -1;
-}
-
-#centerLogo {
-  height: 100vh;
-  margin: auto;
-  max-width: 960px;
-  position: relative;
-  top: -100vh;
-}
+/* Selve logo (uten bakgrunnsfarge)*/
 #logoBig {
   height: 102.2%;
   position: absolute;
@@ -44,6 +48,7 @@
   width: 102.2%;
 }
 
+/* Åpningstiderboks*/
 #opening {
   position: fixed;
   right: 20px;
@@ -86,22 +91,17 @@
   z-index: 5;
 }
 
-/* Seksjonsdeler/bakgrunnskifte */
-span {
-  letter-spacing: -6px;
-}
-
+/* Seksjonsdelere/bakgrunnsskifte */
 .boxContainer {
-  /* Javascript function for 100vh-navbar height */
   padding-bottom: 20px;
   padding-top: 30px;
   position: relative;
 }
-
+/* Partall*/
 .boxContainer:nth-child(even){
   background-color: rgb(246,247,239);
 }
-
+/* Oddetall*/
 .boxContainer:nth-child(odd){
   background-color: rgb(255,255,255);
 }
@@ -112,25 +112,11 @@ span {
   position: relative;
 }
 
-.boxContainer:nth-child(even) .boxFront h2{
-}
-
 /* Tekstbokser oddetall */
 .boxContainer:nth-child(odd) .boxFront .boxBorder{
   background-color: rgb(246,247,239);
   position: relative;
 }
-
-.boxContainer:nth-child(odd) .boxFront h2{
-}
-
-.boxContainer:nth-child(odd) .boxFront{
-}
-
-.boxContainer:nth-child(even) .boxFront{
-
-}
-
 /* Overskrifter tekstbokser */
 .boxFront h2{
   margin-bottom: 5px;
@@ -138,7 +124,7 @@ span {
   top: 28px;
   z-index: 6;
 }
-
+/* De små bildene*/
 .imgSmall {
   border-radius: 0%;
   height: 100%;
@@ -149,27 +135,24 @@ span {
   width: 500px;
 }
 
+/* Bilder partall*/
 .boxContainer:nth-child(even) .imgSmall{
   left: 50px;
   top: calc(10% - 100px);
 }
-
+/* Bilder oddetall*/
 .boxContainer:nth-child(odd) .imgSmall{
   right: 50px;
   top: calc(10% - 100px);
 }
-
-#backImg {
-  height: 100vh;
-  object-fit: cover;
-  opacity: 0.6;
-  position:fixed;
-  top: 0px;
-  width: 100%;
-  z-index: -1;
+/* Minsker spacing mellom V og Å i "våre verdier"-overskrift*/
+span {
+  letter-spacing: -6px;
 }
+
 /* Bokser slutt */
 
+/* Mobil/<960px*/
 @media screen and (max-width: 960px) {
   .frontImg {
     position: fixed;
@@ -187,7 +170,7 @@ span {
     background-color: inherit !important;
     box-shadow: none;
     min-height: 100%;
-    padding: 5%;
+    padding: 20px;
     width: 100%;
   }
 

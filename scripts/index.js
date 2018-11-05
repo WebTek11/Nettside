@@ -14,7 +14,13 @@ function controlFunc() {
   if (window.innerWidth > 960){
     navbarChange()
     imageParallax()}
-  else if (window.pageYOffset > window.innerHeight/2) {
+  /* Gjemmer Åpningstiderboksen når du har scrollet nedoversiden, slik at den ikke
+  dukker opp i mellomrommet mellom tekstboksene og footeren. Gjemmer boksen også
+  når hamburgermenyen er åpen.*/
+  else if (window.scrollY > 282) {
+    document.getElementById('opening').style.display = "none";
+  }
+  else if (document.getElementsByClassName("navbar_responsive").length > 0) {
     document.getElementById('opening').style.display = "none";
   }
   else {
@@ -131,13 +137,15 @@ var word = '';
 
 function disco(event) {
   var x = event.keyCode;
+  console.log(x);
   var y = String.fromCharCode(x);
   word = word + y;
   if (word === "DISCO" || word === "ETIKKEN") {
     word = '';
     var hei = setInterval(colorChange, 150);
   }
-  else if (x == 28 || x == 8) {
+  /* Starter ordet på ny dersom backspace eller esc blir trykket*/
+  else if (x == 27 || x == 8) {
     word = '';
   }
 }
