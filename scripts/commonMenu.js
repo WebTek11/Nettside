@@ -109,7 +109,7 @@ function responsiveNav() {
     let g = document.getElementById("logo")
     if (i.className === "navbar_responsive") {
       g.style.display = "none";
-      document.getElementById('frontImg').style.opacity = "0.75";
+      document.getElementById('frontImg').style.opacity = "0.7";
       document.getElementById('opening').style.display = "none";
     }
     else {
@@ -136,13 +136,22 @@ function responsiveNav() {
   }
   /* Fixes mixcolored navbarlinks*/
   let navColor = document.getElementsByClassName("links")
-  if (i.className === "navbar_responsive") {
-    for (var p = 0; p < navColor.length; p++) {
+  document.getElementById("logoSmall").style.backgroundColor = "#CFDB42"
+  if (i.className === "navbar_responsive" || document.title === "Etikken") {
+    for (var p = 0; p < navColor.length; p++){
       navColor[p].style.color = "white";
-      navColor[p].style.textShadow = "1px 1px 3px #6f6f6f";
     }
-    document.getElementById("logoSmall").style.backgroundColor = "#CFDB42";
+    if (document.title === "Etikken" && i.className === "navbar") {
+      document.getElementById("logoSmall").style.backgroundColor = "rgba(255,255,255,0)"
+    }
   }
+  else {
+    for (var p = 0; p < navColor.length; p++) {
+      navColor[p].style.color = "#CFDB42";
+      navColor[p].style.textShadow = "none";
+    }
+  }
+  currentSite()
 }
 
 /* Makes navbar work with resizing of screen. Changing orientation on iPad for example*/
@@ -181,20 +190,20 @@ document.onresize = setImageHeight;
 
 var site_names = ["Om oss","Kontakt oss","Produkter","Verdier"];
 var class_names = ["aboutNav","contactNav","productsNav","valuesNav"];
-var site_nr;
-for (var i = 0; i < site_names.length; i++) {
-  if (site_names[i] === document.title) {
-    var block;
-    block = document.getElementById(class_names[i]);
-    var underline = block.getElementsByClassName("underline");
-    underline[0].style.width = "calc(100% - 40px)";
-    var link = block.getElementsByClassName("links")
-    if (window.innerWidth > 960) {
-      link[0].style.color = "rgb(76,142,57)";
-    }
-    else {
-      link[0].style.color = "rgb(207,219,66)";
+currentSite()
+function currentSite() {
+  for (var i = 0; i < site_names.length; i++) {
+    if (site_names[i] === document.title) {
+      var block = document.getElementById(class_names[i]);
+      var underline = block.getElementsByClassName("underline");
+      underline[0].style.width = "calc(100% - 40px)";
+      var link = block.getElementsByClassName("links")
+      if (window.innerWidth > 960) {
+        link[0].style.color = "rgb(76,142,57)";
+      }
+      else {
+        link[0].style.color = "rgb(207,219,66)";
+      }
     }
   }
 }
-console.log(document.title);
