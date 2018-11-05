@@ -19,7 +19,7 @@ h1 {
 }
 
 .links {
-  color: #CFDB42 !important;
+  color: #CFDB42;
   text-shadow: none !important;
 }
 
@@ -173,4 +173,14 @@ i {
     margin: 0;
     position: relative;
   }
+}
+
+#googlemaps {
+border: 0;
+max-height: 100%;
+max-width: 100%;
+}
+
+#contactText p {
+  text-align: center;
 }

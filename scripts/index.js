@@ -14,7 +14,7 @@ function controlFunc() {
   if (window.innerWidth > 960){
     navbarChange()
     imageParallax()}
-  else if (window.pageYOffset > window.innerHeight) {
+  else if (window.pageYOffset > window.innerHeight/2) {
     document.getElementById('opening').style.display = "none";
   }
   else {
@@ -142,6 +142,7 @@ function disco(event) {
 }
 
 function colorChange() {
+  /* Hentet kode for tilfeldig farge fra Chris Coyier ved https://css-tricks.com/snippets/javascript/random-hex-color/*/
   let randomColor = Math.floor(Math.random()*16777215).toString(16);
   document.getElementById('logo').style.backgroundColor = '#'+randomColor;
   randomColor = Math.floor(Math.random()*16777215).toString(16);

@@ -3,6 +3,7 @@
 var footer_to_insert;
 var footer_container;
 
+
 footer_to_insert = document.createElement("footer");
 footer_to_insert.class = "footer"
 
@@ -58,7 +59,7 @@ menu_to_insert.innerHTML = `
   <ul class="mainBar">
     <li id="aboutNav"><a class="links" href="about.html">OM OSS</a> <a href="about.html" class="underline"></a></li>
     <ul class="dropdown">
-      <li id="valuesNav"><a class="links dropbtn" href="values.html">VÅRE VERDIER</a> <a href="values.html" class="underline"></a>
+      <li id="valuesNav"><a class="links" href="values.html">VÅRE VERDIER</a> <a href="values.html" class="underline"></a>
           <div class="dropdown-content" id="dd-c">
             <a href="values.html#link_verdi1" class="links">Økologisk bærekraft</a>
             <a href="values.html#link_verdi2" class="links">Rettferdig handel</a>
@@ -108,11 +109,13 @@ function responsiveNav() {
     let g = document.getElementById("logo")
     if (i.className === "navbar_responsive") {
       g.style.display = "none";
-      document.getElementById('frontImg').style.opacity = "0.75"
+      document.getElementById('frontImg').style.opacity = "0.75";
+      document.getElementById('opening').style.display = "none";
     }
     else {
       g.style.display = "block";
-      document.getElementById('frontImg').style.opacity = "1"
+      document.getElementById('frontImg').style.opacity = "1";
+      document.getElementById('opening').style.display = "block";
     }
   }
   // Fixes empty spacing on resposive nav
@@ -174,6 +177,26 @@ function setImageHeight() {
   }
 }
 
-if (window.innerHeight <= 960) {
-  setImageHeight()
+document.onresize = setImageHeight;
+
+var site_names = ["Om oss","Kontakt oss","Produkter","Verdier"];
+var class_names = ["aboutNav","contactNav","productsNav","valuesNav"];
+var site_nr;
+for (var i = 0; i < site_names.length; i++) {
+  if (site_names[i] === document.title) {
+    var block;
+    block = document.getElementById(class_names[i]);
+    var underline = block.getElementsByClassName("underline");
+    console.log(underline);
+    underline[0].style.width = "calc(100% - 40px)";
+    var link = block.getElementsByClassName("links")
+    console.log(link);
+    if (window.innerWidth > 960) {
+      link[0].style.color = "rgb(76,142,57)";
+    }
+    else {
+      link[0].style.color = "rgb(207,219,66)";
+    }
+  }
 }
+console.log(document.title);
