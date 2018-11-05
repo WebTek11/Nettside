@@ -163,3 +163,17 @@ function setNavBarResize() {
     win = window.innerWidth;
   }
 }
+
+var hh = window.innerHeight;
+
+function setImageHeight() {
+  var img = document.getElementsByClassName("backImg");
+  img[0].style.height = hh+'px';
+  if (document.getElementById("centerLogo")) {
+    document.getElementById("centerLogo").style.height = hh+'px';
+  }
+}
+
+if (window.innerHeight <= 960) {
+  setImageHeight()
+}
