@@ -283,6 +283,7 @@ li:hover .underline{
   .dropbtn:hover .dropdown-content {display: block;}
 }
 
+/* Footer CSS */
 /* Deler footeren i 3 kolonner */
 body {
   margin-bottom: 0px;
@@ -365,3 +366,4 @@ body {
     position: relative;
   }
 }
+/* SLutt Footer CSS */
