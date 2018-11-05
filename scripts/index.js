@@ -88,7 +88,7 @@ function navbarChange() {
       var b = a*0.5+0.5;
       var c = 70*a + 185;
 
-      /* Endrer styling av navbar fra og endrer den fra transparent til hvit */
+      /* Endrer styling av navbar og endrer den fra transparent til hvit */
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,'+a+')';
       document.getElementById("dd-c").style.backgroundColor = 'rgb('+c+','+c+','+c+','+b+')';
       document.getElementById('nav').style.boxShadow = 'none';

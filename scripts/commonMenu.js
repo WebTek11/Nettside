@@ -1,5 +1,5 @@
-/* Lager å setter inn en footer ved å sette inn
-<div id="commonFooter"></div> der man ønsker footer */
+/* Lager og setter inn en footer. Sett inn <div id="commonFooter"></div>
+der man ønsker footer */
 var footer_to_insert;
 var footer_container;
 
@@ -7,7 +7,7 @@ var footer_container;
 footer_to_insert = document.createElement("footer");
 footer_to_insert.class = "footer"
 
-/* HTML som skal settes inn mellom ``; */
+/* HTML som skal settes inn, hold den mellom ``-tegnene */
 footer_to_insert.innerHTML = `
 <div class="footerBox">
 <div class="footerRow">
@@ -43,14 +43,14 @@ footer_to_insert.innerHTML = `
 footer_container = document.getElementById("commonFooter");
 footer_container.appendChild(footer_to_insert);
 
-/* Lager og setter inn en navbar ved å sette inn
-<div class="navbar" id="nav"></div> der man ønsker navbar */
+/* Lager og setter inn en navbar. Sett inn <div class="navbar" id="nav"></div>
+der man ønsker navbar */
 var menu_to_insert;
 var menu_container;
 
 menu_to_insert = document.createElement("div");
 
-/* HTML som skal settes inn mellom ``; */
+/* HTML som skal settes inn, hold den mellom ``-tegnene */
 menu_to_insert.innerHTML = `
 <div class="navbarInside">
   <a href="index.html" id="logoStore"><img src="img/originals/Etikken_logo/EtikkenPlain.png" id="logoSmall" alt="logo"></a>
@@ -99,7 +99,7 @@ function responsiveNav() {
     f.style.display = "block";
   }
 
-  /* Skjuler innholder når menyen er åpen */
+  /* Skjuler innholdet når menyen er åpen */
   let c = document.querySelector(".container")
   if (i.className === "navbar_responsive") {
     c.style.display = "none";
@@ -107,7 +107,7 @@ function responsiveNav() {
     c.style.display = "block";
   }
 
-  /* Skjuler Logo Front Page på forsiden */
+  /* Skjuler #logo på fremsiden */
   if (document.getElementById("logo")) {
     let g = document.getElementById("logo")
     if (i.className === "navbar_responsive") {
@@ -122,7 +122,7 @@ function responsiveNav() {
     }
   }
 
-  /* Fikser tomrom på resposiv navbar */
+  /* Fikser tomrom på responsiv navbar */
   let z = document.body
   if (i.className === "navbar_responsive") {
     z.style.height = "100%";
@@ -139,7 +139,7 @@ function responsiveNav() {
     y.style.display = "none";
   }
 
-  /* Fikser multifagrede navbarlinker */
+  /* Fikser flerfargede navbar-linker */
   let navColor = document.getElementsByClassName("links")
   document.getElementById("logoSmall").style.backgroundColor = "#CFDB42"
   if (i.className === "navbar_responsive" || document.title === "Etikken") {
