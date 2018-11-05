@@ -1,3 +1,6 @@
+var site_names = ["Om oss","Kontakt oss","Produkter","Verdier"];
+var class_names = ["aboutNav","contactNav","productsNav","valuesNav"];
+
 // This block creates and inserts a footer
 // Insert <div id="commonFooter"></div> wherever you want a footer
 var footer_to_insert;
@@ -151,6 +154,7 @@ function responsiveNav() {
       navColor[p].style.textShadow = "none";
     }
   }
+  /* Setter stil på menyelementer til hvilken side du er på*/
   currentSite()
 }
 
@@ -159,13 +163,11 @@ var win = window.innerWidth;
 
 function setNavBarResize() {
   let s = document.getElementById("nav")
-  if (window.innerWidth <= 960) {
-    if (win > 960) {
-      s.className = "navbar_responsive";
-      responsiveNav();
-      win = window.innerWidth;
-      document.getElementById("logoSmall").style.display = "none";
-    }
+  if (window.innerWidth <= 960 && win > 960) {
+    s.className = "navbar_responsive";
+    responsiveNav();
+    win = window.innerWidth;
+    document.getElementById("logoSmall").style.display = "none";
   }
   else {
     s.className = "navbar_responsive";
@@ -176,7 +178,7 @@ function setNavBarResize() {
   }
 }
 
-var hh = window.innerHeight;
+var hh = window.innerHeight*1.2;
 
 function setImageHeight() {
   var img = document.getElementsByClassName("backImg");
@@ -188,16 +190,17 @@ function setImageHeight() {
 
 document.onresize = setImageHeight;
 
-var site_names = ["Om oss","Kontakt oss","Produkter","Verdier"];
-var class_names = ["aboutNav","contactNav","productsNav","valuesNav"];
 currentSite()
+
 function currentSite() {
   for (var i = 0; i < site_names.length; i++) {
     if (site_names[i] === document.title) {
       var block = document.getElementById(class_names[i]);
       var underline = block.getElementsByClassName("underline");
+      underline[0].style.transition = "none";
       underline[0].style.width = "calc(100% - 40px)";
       var link = block.getElementsByClassName("links")
+      link[0].style.transition = "none";
       if (window.innerWidth > 960) {
         link[0].style.color = "rgb(76,142,57)";
       }
