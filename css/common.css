@@ -247,6 +247,11 @@ li:hover .underline{
 
 }
 
+/* Drodown-menu */
+
+/* implementation inspired by W3Schools's hoverable dropdown menu. 
+Html can be found in commonmenu.js */
+
 .dropdown {
   position: relative;
 }
@@ -282,6 +287,8 @@ li:hover .underline{
   .dropdown:hover .dropdown-content {display: block;}
   .dropbtn:hover .dropdown-content {display: block;}
 }
+
+
 
 /* Footer CSS */
 /* Deler footeren i 3 kolonner */
