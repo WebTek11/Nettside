@@ -249,7 +249,8 @@ li:hover .underline{
 
 /* Drodown-menu */
 
-/* implementation inspired by W3Schools's hoverable dropdown menu. Html can be found in commonmenu.js 
+/* implementation inspired by W3Schools's hoverable dropdown menu. Html can be found in commonmenu.js.
+  Some code relating to the dropdown can also be found in index.js.
   https://www.w3schools.com/howto/howto_css_dropdown.asp */
 
 .dropdown {
