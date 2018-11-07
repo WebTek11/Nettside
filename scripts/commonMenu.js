@@ -172,9 +172,11 @@ function responsiveNav() {
   currentSite()
 }
 
-/* Sørger for at navbar fungerer når størrelsen og retning på skjermen endres. */
-var win = window.innerWidth;
 
+var win = window.innerWidth;
+var hei = 1;
+
+/* Sørger for at navbar fungerer når størrelsen og retning på skjermen endres. */
 function setNavBarResize() {
   let s = document.getElementById("nav")
   if (window.innerWidth <= 960 && win > 960) {
@@ -182,8 +184,9 @@ function setNavBarResize() {
     responsiveNav();
     win = window.innerWidth;
     document.getElementById("logoSmall").style.display = "none";
+    hei = 1;
   }
-  else {
+  else if (window.innerWidth > 960 && hei){
     s.className = "navbar_responsive";
     responsiveNav();
     s.className = "navbar";
@@ -191,6 +194,7 @@ function setNavBarResize() {
     if (win > 960) {
       document.getElementById("logoSmall").style.display = "block";
     }
+    hei = 0;
   }
 }
 
