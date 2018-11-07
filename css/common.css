@@ -245,9 +245,6 @@ li:hover .underline{
     display: none;
   }
 
-  .links {
-    padding: 6%;
-  }
 }
 
 /* Implementasjonen av dropdown-menyen er inspirert av W3Schools

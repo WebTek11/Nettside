@@ -21,7 +21,7 @@ footer_to_insert.innerHTML = `
 
   <div class="footerColumn">
     <p class="footerHeading">Åpningstider</p>
-    <p class="footerText">10:00-18:00<br>Mandag-Lørdag</p>
+    <p class="footerText">Mandag-Lørdag<br>10:00-18:00</p>
   </div>
 
   <div class="footerColumn">
@@ -178,8 +178,10 @@ function setNavBarResize() {
     s.className = "navbar_responsive";
     responsiveNav();
     s.className = "navbar";
-    document.getElementById("logoSmall").style.display = "block";
     win = window.innerWidth;
+    if (win > 960) {
+      document.getElementById("logoSmall").style.display = "block";
+    }
   }
 }
 
