@@ -9,32 +9,34 @@ controlFunc()
 document.onscroll = controlFunc;
 
 /* Function som gjør at navbarChange og imageParallax ikke kjøres på vinduer
-under 960 px. Setter styles for elements på mobiler som trenger dette */
+under 960 px. Setter styles for elementer på mobiler som trenger dette */
 function controlFunc() {
   wind = window.innerWidth;
   if (window.innerWidth > 960){
     navbarChange()
     imageParallax()}
-  /* Gjemmer Åpningstiderboksen når du har scrollet nedoversiden, slik at den ikke
-  dukker opp i mellomrommet mellom tekstboksene og footeren. Gjemmer boksen også
-  når hamburgermenyen er åpen */
-  else if (window.scrollY > 282) {
-    document.getElementById('opening').style.display = "none";
-  }
-  else if (document.getElementsByClassName("navbar_responsive").length > 0) {
-    document.getElementById('opening').style.display = "none";
-  }
+
   else {
     document.getElementById('nav').style.backgroundColor = 'rgba(255,255,255,0)';
     document.getElementById('nav').style.boxShadow = 'none';
     document.getElementById('centerLogo').style.top = '0';
     document.getElementById('imageBox').style.top = '-83px';
     document.getElementById('opening').style.display = "block";
+
+    /* Gjemmer Åpningstiderboksen når du har scrollet nedover siden, slik at den ikke
+    dukker opp i mellomrommet mellom tekstboksene og footeren. Gjemmer boksen også
+    når hamburgermenyen er åpen */
+    if (window.scrollY > 282) {
+      document.getElementById('opening').style.display = "none";
+    }
+    else if (document.getElementsByClassName("navbar_responsive").length > 0) {
+      document.getElementById('opening').style.display = "none";
+    }
   }
 }
 
-/* Lar forsidebildet bevege seg sammen med scrolling slik at det blir
-parallax effekt */
+/* Lar forsidebildet bevege seg sammen med scrolling slik at det blir en
+parallaxeffekt */
 function imageParallax() {
     var scrollTop = window.pageYOffset;
     if (scrollTop < window.innerHeight) {
@@ -47,26 +49,24 @@ function imageParallax() {
 }
 
 /* Setter høyde for boksene på forsiden slik at høyden blir lik høyden til
-vinduet minus navbar */
+vinduet minus navbar (ned til 460px og opp til 1000px hvor en høyde i stedet fastsettes) */
 function setBoxHeight() {
   if (window.innerWidth > 960 && wind > 960){
     var wh = window.innerHeight - 83;
     var boxes = document.getElementsByClassName('boxContainer');
-    var images = document.getElementsByClassName('imgSmall');
     if (wh <= 460){
       for (var i = 0; i < boxes.length; i++) {
         boxes[i].style.height = '460px';
       }
-      for (var i = 0; i < images.length; i++) {
-        images[i].style.height = '330px';
+    }
+    else if (wh > 1000){
+      for (var i = 0; i < boxes.length; i++) {
+        boxes[i].style.height = '1000px';
       }
     }
     else {
       for (var i = 0; i < boxes.length; i++) {
         boxes[i].style.height = wh+'px';
-      }
-      for (var i = 0; i < images.length; i++) {
-        images[i].style.height = '80%';
       }
     }
   }
@@ -75,7 +75,7 @@ function setBoxHeight() {
   }
 }
 
-/* Endrer fargene til navbar */
+/* Endrer fargene til navbarelementer */
 function navbarChange() {
   if (window.innerWidth > 960) {
     var wh = window.innerHeight;
@@ -83,22 +83,27 @@ function navbarChange() {
     var scrollTop = window.pageYOffset;
     var navLinks = document.getElementsByClassName('links');
 
+    /* Styling mellom havlparten av fremsidebildet er scrollet forbi, til hele bildet
+    er scrollet forbi. */
     if (scrollTop > whHalf && scrollTop < wh) {
-      var a = (scrollTop - whHalf)/whHalf;
-      var b = a*0.5+0.5;
-      var c = 70*a + 185;
+      /* Variabler som avhenger av scrolleavstand og deretter styrer fargeendring*/
+      var a = (scrollTop - whHalf) / whHalf;
+      var b = a * 0.5 + 0.5;
+      var c = 70 * a + 185;
 
       /* Endrer styling av navbar og endrer den fra transparent til hvit */
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,'+a+')';
       document.getElementById("dd-c").style.backgroundColor = 'rgb('+c+','+c+','+c+','+b+')';
+      document.getElementById("dd-c2").style.backgroundColor = 'rgb('+c+','+c+','+c+','+b+')';
       document.getElementById('nav').style.boxShadow = 'none';
       document.getElementById('nav').style.boxShadow = '0 1px 10px white';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,'+a+')';
 
-      /* Kalkulerer ny farge og skygge for teksten */
+      /* Kalkulerer ny farge og skygge for tekst. Verdier i prosent for farge og
+      fra 1 til 0 for skygge. */
       var redNew = 100 - 19 * a;
       var greenNew = 100 - 14 * a;
-      var blueNew = 100 - 72 * a;
+      var blueNew = 100 - 74 * a;
       var shadowNew = 1 - 2 * a;
       if (scrollTop >= 0.75*wh) {
         shadowNew = 0;
@@ -120,6 +125,7 @@ function navbarChange() {
       }
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%)'
       document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,1)';
+      document.getElementById("dd-c2").style.backgroundColor = 'rgb(255,255,255,1)';
 
     }
 
@@ -133,6 +139,7 @@ function navbarChange() {
       document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,0)';
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,0)';
       document.getElementById("dd-c").style.backgroundColor = 'rgb(185,185,185,0.5)';
+      document.getElementById("dd-c2").style.backgroundColor = 'rgb(185,185,185,0.5)';
     }
   }
 }
@@ -141,7 +148,6 @@ var word = '';
 
 function disco(event) {
   var x = event.keyCode;
-  console.log(x);
   var y = String.fromCharCode(x);
   word = word + y;
   if (word === "DISCO" || word === "ETIKKEN") {

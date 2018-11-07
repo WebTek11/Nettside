@@ -260,8 +260,12 @@ commonmenu.js, og noe kode relatert til dropdown er det også i index.js */
   display: none;
   position: absolute;
   background-color: rgb(255,255,255);
-  width: 200px;
   box-shadow: 2px 2px 2px grey;
+  width: 200px;
+}
+
+#prodDd .dropdown-content {
+  left: -12.5px;
 }
 
 /* Linker i dropdown */

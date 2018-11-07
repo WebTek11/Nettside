@@ -21,7 +21,7 @@ footer_to_insert.innerHTML = `
 
   <div class="footerColumn">
     <p class="footerHeading">Åpningstider</p>
-    <p class="footerText">Mandag-Lørdag<br>10:00-18:00</p>
+    <p class="footerText">mandag-lørdag<br>10:00-18:00</p>
   </div>
 
   <div class="footerColumn">
@@ -57,11 +57,11 @@ menu_to_insert = document.createElement("div");
 menu_to_insert.innerHTML = `
 <div class="navbarInside">
   <a href="index.html" id="logoStore"><img src="img/originals/Etikken_logo/etikken_plain.png" id="logoSmall" alt="logo"></a>
-  <a id="burger" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/burger.svg" alt="icon"></a>
-  <a id="cross" class="navIcon" href="javascript:void(0);" onclick="responsiveNav()"><img src="img/icon/cross.svg" alt="icon"></a>
+  <a id="burger" class="navIcon" href="javascript:responsiveNav()"><img src="img/icon/burger.svg" alt="icon"></a>
+  <a id="cross" class="navIcon" href="javascript:responsiveNav()"><img src="img/icon/cross.svg" alt="icon"></a>
   <ul class="mainBar">
     <li id="aboutNav"><a class="links" href="about.html">OM OSS</a> <a href="about.html" class="underline"></a></li>
-    <ul class="dropdown">
+    <ul class="dropdown" id="valDd">
       <li id="valuesNav"><a class="links" href="values.html">VÅRE VERDIER</a> <a href="values.html" class="underline"></a>
           <div class="dropdown-content" id="dd-c">
             <a href="values.html#link_verdi1" class="links">Økologisk bærekraft</a>
@@ -72,7 +72,16 @@ menu_to_insert.innerHTML = `
           </div>
       </li>
     </ul>
-    <li id="productsNav"><a class="links" href="products.html">PRODUKTER</a> <a href="products.html" class="underline"></a></li>
+    <ul class="dropdown" id="prodDd">
+      <li id="productsNav"><a class="links" href="products.html">PRODUKTER</a> <a href="products.html" class="underline"></a>
+          <div class="dropdown-content" id="dd-c2">
+            <a href="products.html#link_product1" class="links">Hjemmelaget mel</a>
+            <a href="products.html#link_product2" class="links">Alt i løsvekt</a>
+            <a href="products.html#link_product3" class="links">Frø og spirer</a>
+            <a href="products.html#link_product4" class="links">Jackfruit</a>
+          </div>
+      </li>
+    </ul>
     <li id="webpageNav"><a class="links" target="_blank" href="http://www.etikken.no">NETTBUTIKK</a> <a href="http://www.etikken.no" class="underline"></a></li>
     <li id="contactNav"><a class="links" href="contact.html">KONTAKT</a> <a href="contact.html" class="underline"></a></li>
   </ul>
@@ -110,8 +119,8 @@ function responsiveNav() {
     c.style.display = "block";
   }
 
-  /* Skjuler #logo på fremsiden */
-  if (document.getElementById("logo")) {
+  /* Skjuler logo og åpningstider på fremsiden */
+  if (document.title === "Etikken") {
     let g = document.getElementById("logo")
     if (i.className === "navbar_responsive") {
       g.style.display = "none";
