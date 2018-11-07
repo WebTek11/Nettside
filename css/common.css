@@ -245,7 +245,11 @@ li:hover .underline{
     display: none;
   }
 
+  .links {
+   padding: 6%;
+ }
 }
+/* Her slutter @media screen and (max-width: 960px) */
 
 /* Implementasjonen av dropdown-menyen er inspirert av W3Schools
 (https://www.w3schools.com/howto/howto_css_dropdown.asp). Html er i
