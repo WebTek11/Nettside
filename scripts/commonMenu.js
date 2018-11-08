@@ -197,8 +197,7 @@ function setNavBarResize() {
     hei = 0;
   }
 }
-
-var hh = window.innerHeight*1.2;
+/*var hh = window.innerHeight;
 
 function setImageHeight() {
   var img = document.getElementsByClassName("backImg");
@@ -206,9 +205,9 @@ function setImageHeight() {
   if (document.getElementById("centerLogo")) {
     document.getElementById("centerLogo").style.height = hh+'px';
   }
-}
+}*/
 
-document.onresize = setImageHeight;
+/*window.onresize = setImageHeight;*/
 
 currentSite()
 
