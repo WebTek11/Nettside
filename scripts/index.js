@@ -26,7 +26,7 @@ function controlFunc() {
     /* Gjemmer Åpningstiderboksen når du har scrollet nedover siden, slik at den ikke
     dukker opp i mellomrommet mellom tekstboksene og footeren. Gjemmer boksen også
     når hamburgermenyen er åpen */
-    if (window.scrollY > 282) {
+    if (window.scrollY > 350) {
       document.getElementById('opening').style.display = "none";
     }
     else if (document.getElementsByClassName("navbar_responsive").length > 0) {
@@ -92,12 +92,12 @@ function navbarChange() {
       var c = 70 * a + 185;
 
       /* Endrer styling av navbar og endrer den fra transparent til hvit */
-      document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,'+a+')';
-      document.getElementById("dd-c").style.backgroundColor = 'rgb('+c+','+c+','+c+','+b+')';
-      document.getElementById("dd-c2").style.backgroundColor = 'rgb('+c+','+c+','+c+','+b+')';
+      document.getElementById('nav').style.backgroundColor = 'rgba(255,255,255,'+a+')';
+      document.getElementById("dd-c").style.backgroundColor = 'rgba('+c+','+c+','+c+','+b+')';
+      document.getElementById("dd-c2").style.backgroundColor = 'rgba('+c+','+c+','+c+','+b+')';
       document.getElementById('nav').style.boxShadow = 'none';
       document.getElementById('nav').style.boxShadow = '0 1px 10px white';
-      document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,'+a+')';
+      document.getElementById('logoSmall').style.backgroundColor = 'rgba(81%,86%,26%,'+a+')';
 
       /* Kalkulerer ny farge og skygge for tekst. Verdier i prosent for farge og
       fra 1 til 0 for skygge. */
@@ -117,15 +117,15 @@ function navbarChange() {
 
     /* Styling når man har scrollet forbi forsidebildet */
     else if (scrollTop >= wh) {
-      document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,1)';
+      document.getElementById('nav').style.backgroundColor = 'rgba(255,255,255,1)';
       document.getElementById('nav').style.boxShadow = '0px 2px 2px grey';
       for (i = 0; i < navLinks.length; i++) {
         navLinks[i].style.color = 'rgb(81%,86%,26%)';
         navLinks[i].style.textShadow = '0px 0px 0px #a2a2a2';
       }
       document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%)'
-      document.getElementById("dd-c").style.backgroundColor = 'rgb(255,255,255,1)';
-      document.getElementById("dd-c2").style.backgroundColor = 'rgb(255,255,255,1)';
+      document.getElementById("dd-c").style.backgroundColor = 'rgba(255,255,255,1)';
+      document.getElementById("dd-c2").style.backgroundColor = 'rgba(255,255,255,1)';
 
     }
 
@@ -136,10 +136,10 @@ function navbarChange() {
         navLinks[i].style.textShadow = '0px 0px 1px #a2a2a2';
       }
       document.getElementById('nav').style.boxShadow = '0px 0px 10px white';
-      document.getElementById('nav').style.backgroundColor = 'rgb(255,255,255,0)';
-      document.getElementById('logoSmall').style.backgroundColor = 'rgb(81%,86%,26%,0)';
-      document.getElementById("dd-c").style.backgroundColor = 'rgb(185,185,185,0.5)';
-      document.getElementById("dd-c2").style.backgroundColor = 'rgb(185,185,185,0.5)';
+      document.getElementById('nav').style.backgroundColor = 'rgba(255,255,255,0)';
+      document.getElementById('logoSmall').style.backgroundColor = 'rgba(81%,86%,26%,0)';
+      document.getElementById("dd-c").style.backgroundColor = 'rgba(185,185,185,0.5)';
+      document.getElementById("dd-c2").style.backgroundColor = 'rgba(185,185,185,0.5)';
     }
   }
 }
