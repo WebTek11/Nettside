@@ -138,9 +138,11 @@ function responsiveNav() {
   let z = document.body
   if (i.className === "navbar_responsive") {
     z.style.height = "100%";
+    z.style.maxHeight = "100%";
   }
   else {
     z.style.height = "auto";
+    z.style.maxHeight = "auto";
   }
 
   let y = document.getElementById("logoSmall")
