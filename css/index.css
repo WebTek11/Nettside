@@ -10,6 +10,7 @@
 /* Selve forsidebilde */
 .frontImg {
   height: 100vh;
+  max-height: 100vh;
   object-fit: cover;
   position: relative;
   top: 0px;
