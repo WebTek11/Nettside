@@ -8,6 +8,7 @@ body {
   min-height: 100%;
   position: relative;
   width: 100%;
+  margin-bottom: 0px;
 }
 
 h2 {
@@ -28,7 +29,7 @@ h3 {
 }
 
 a {
-  color: #CFDB42;
+  color: rgb(76,142,57);
   text-decoration: none;
 }
 
@@ -46,7 +47,7 @@ p {
 }
 
 p a:hover {
-  color: rgb(76,142,57);
+  text-decoration: underline;
 }
 
 /* Navbar */
@@ -80,7 +81,7 @@ li:hover > a{
 
 .navbar {
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 2px 2px grey;
+  box-shadow: 0px 2px 2px rgb(128,128,128);
   position: sticky;
   top: 0px;
   z-index: 10;
@@ -109,7 +110,7 @@ li:hover > a{
 }
 
 .navbarInside {
-  border-left: 2px white;
+  border-left: 2px rgb(255,255,255);
   margin: auto;
   max-width: 960px;
 }
@@ -121,7 +122,7 @@ li:hover .underline{
 /* Navelementer */
 #logoSmall {
   background-color: rgb(207,219,66);
-  border: 1px solid white;
+  border: 1px solid rgb(255,255,255);
   border-radius: 50%;
   height: 60px;
   margin: 10px 0px 0px 50px;
@@ -188,21 +189,21 @@ li:hover .underline{
   }
 
   .navbar_responsive .mainBar * {
-    color: white;
+    color: rgb(255,255,255);
     display: block;
     float: none;
     font-size: 30px;
     left: 0px;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: 1px 1px 3px #6f6f6f;
+    text-shadow: 1px 1px 3px rgb(44,44,44);
   }
 
   .navIcon {
-    background-color: white;
+    background-color: rgb(255,255,255);
     border-radius: 50%;
     box-sizing: content-box;
-    box-shadow: 0px 0px 7px grey;
+    box-shadow: 0px 0px 7px rgb(128,128,128);
     height: 30px;
     padding: 7px;
     position: fixed;
@@ -264,7 +265,7 @@ commonmenu.js, og noe kode relatert til dropdown er det også i index.js */
   display: none;
   position: absolute;
   background-color: rgb(255,255,255);
-  box-shadow: 2px 2px 2px grey;
+  box-shadow: 2px 2px 2px rgb(128,128,128);
   width: 200px;
 }
 
@@ -292,10 +293,6 @@ commonmenu.js, og noe kode relatert til dropdown er det også i index.js */
 }
 
 /* Deler footeren i 3 kolonner */
-body {
-  margin-bottom: 0px;
-}
-
 .footerBox {
   max-width: 960px;
   margin-left: auto;
@@ -317,13 +314,13 @@ body {
 
 /* Styler footeren */
 .footerHeading {
-  color: green;
+  color: rgb(76,142,57);
   font-size: 1.2em;
   font-weight: bold;
 }
 
 .footerText {
-  color: green;
+  color: rgb(76,142,57);
   font-size: 1em;
 }
 
@@ -333,7 +330,7 @@ body {
 }
 
 .footerText a:hover {
-  color: rgb(207,219,66);
+  text-decoration: underline;
 }
 
 .socialIcons {

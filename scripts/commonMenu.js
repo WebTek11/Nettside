@@ -1,5 +1,3 @@
-var site_names = ["Om oss","Kontakt oss","Produkter","Verdier"];
-var class_names = ["aboutNav","contactNav","productsNav","valuesNav"];
 
 /* Lager og setter inn en footer. Sett inn <div id="commonFooter"></div>
 der man ønsker footer */
@@ -158,7 +156,7 @@ function responsiveNav() {
   document.getElementById("logoSmall").style.backgroundColor = "#CFDB42"
   if (i.className === "navbar_responsive" || document.title === "Etikken") {
     for (var p = 0; p < navColor.length; p++){
-      navColor[p].style.color = "white";
+      navColor[p].style.color = "rgb(255,255,255)";
     }
     if (document.title === "Etikken" && i.className === "navbar") {
       document.getElementById("logoSmall").style.backgroundColor = "rgba(255,255,255,0)"
@@ -174,11 +172,12 @@ function responsiveNav() {
   currentSite()
 }
 
-
+/* Variabler som hjelper med å tracke om vinduet går fra over/under 960px til
+under/over 960px.*/
 var win = window.innerWidth;
-var hei = 1;
+var resolutionChangeCheck = 1;
 
-/* Sørger for at navbar fungerer når størrelsen og retning på skjermen endres. */
+/* Sørger for at navbar fungerer når størrelsen og retning på skjermen endres.*/
 function setNavBarResize() {
   let s = document.getElementById("nav")
   if (window.innerWidth <= 960 && win > 960) {
@@ -186,9 +185,9 @@ function setNavBarResize() {
     responsiveNav();
     win = window.innerWidth;
     document.getElementById("logoSmall").style.display = "none";
-    hei = 1;
+    resolutionChangeCheck = 1;
   }
-  else if (window.innerWidth > 960 && hei){
+  else if (window.innerWidth > 960 && resolutionChangeCheck){
     s.className = "navbar_responsive";
     responsiveNav();
     s.className = "navbar";
@@ -196,23 +195,15 @@ function setNavBarResize() {
     if (win > 960) {
       document.getElementById("logoSmall").style.display = "block";
     }
-    hei = 0;
+    resolutionChangeCheck = 0;
   }
 }
-/*var hh = window.innerHeight;
 
-function setImageHeight() {
-  var img = document.getElementsByClassName("backImg");
-  img[0].style.height = hh+'px';
-  if (document.getElementById("centerLogo")) {
-    document.getElementById("centerLogo").style.height = hh+'px';
-  }
-}*/
-
-/*window.onresize = setImageHeight;*/
-
+var site_names = ["Om oss","Kontakt oss","Produkter","Verdier"];
+var class_names = ["aboutNav","contactNav","productsNav","valuesNav"];
 currentSite()
 
+/* Setter styling på siden du er inne på.*/
 function currentSite() {
   for (var i = 0; i < site_names.length; i++) {
     if (site_names[i] === document.title) {

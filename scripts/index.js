@@ -96,7 +96,7 @@ function navbarChange() {
       document.getElementById("dd-c").style.backgroundColor = 'rgba('+c+','+c+','+c+','+b+')';
       document.getElementById("dd-c2").style.backgroundColor = 'rgba('+c+','+c+','+c+','+b+')';
       document.getElementById('nav').style.boxShadow = 'none';
-      document.getElementById('nav').style.boxShadow = '0 1px 10px white';
+      document.getElementById('nav').style.boxShadow = '0 1px 10px rgb(255,255,255)';
       document.getElementById('logoSmall').style.backgroundColor = 'rgba(81%,86%,26%,'+a+')';
 
       /* Kalkulerer ny farge og skygge for tekst. Verdier i prosent for farge og
@@ -118,7 +118,7 @@ function navbarChange() {
     /* Styling når man har scrollet forbi forsidebildet */
     else if (scrollTop >= wh) {
       document.getElementById('nav').style.backgroundColor = 'rgba(255,255,255,1)';
-      document.getElementById('nav').style.boxShadow = '0px 2px 2px grey';
+      document.getElementById('nav').style.boxShadow = '0px 2px 2px rgb(128,128,128)';
       for (i = 0; i < navLinks.length; i++) {
         navLinks[i].style.color = 'rgb(81%,86%,26%)';
         navLinks[i].style.textShadow = '0px 0px 0px #a2a2a2';
@@ -132,10 +132,10 @@ function navbarChange() {
     /* Standard styling for navbar ved ingen scrolling (toppen av siden) */
     else {
       for (i = 0; i < navLinks.length; i++) {
-        navLinks[i].style.color = 'white';
+        navLinks[i].style.color = 'rgb(255,255,255)';
         navLinks[i].style.textShadow = '0px 0px 1px #a2a2a2';
       }
-      document.getElementById('nav').style.boxShadow = '0px 0px 10px white';
+      document.getElementById('nav').style.boxShadow = '0px 0px 10px rgb(255,255,255)';
       document.getElementById('nav').style.backgroundColor = 'rgba(255,255,255,0)';
       document.getElementById('logoSmall').style.backgroundColor = 'rgba(81%,86%,26%,0)';
       document.getElementById("dd-c").style.backgroundColor = 'rgba(185,185,185,0.5)';

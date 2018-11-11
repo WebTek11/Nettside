@@ -64,11 +64,11 @@
 
 #opening h3 {
   margin-top: 25px;
-  color: white;
+  color: rgb(255,255,255);
 }
 
 #opening p {
-  color: white;
+  color: rgb(255,255,255);
 }
 
 /* Alle boksene som ikke er navbar eller footer */
@@ -156,8 +156,6 @@
 span {
   letter-spacing: -6px;
 }
-
-
 
 /* For mobilskjermer */
 @media screen and (max-width: 960px) {
